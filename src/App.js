@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+		<div>
+			{/* header will have buttons for jumping to any section */}
+			<header></header>
+			<section className="home"></section>
+			{/* <section className="about me"></section> dtu final year mce cgpa and resume link */}
+			<section className="work experience"></section>
+			<section className="projects"></section>
+			<section className="skills"></section>
+			<section className="contact me"></section>
+			{/* <footer></footer> will contain different profile links*/}
+		</div>
+	
+	)
 }
-
-export default App;
