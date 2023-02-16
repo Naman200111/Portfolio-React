@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.name {
+	font-family: 'Zeyada', cursive;
+	font-weight: bolder;
+	font-size: 1.5em;
+	margin: 1em;
+}
+
+.buttons {
+	display: none;
+}
+
+.buttons-sidebar {
+	display: flex;
+	flex-direction: column;
+}
+
+.buttons-sidebar button {
+	margin: 1.25em;
+	padding: 0.5em;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.list {
+	height: 1.5em;
+	width: 1.5em;
+	margin: 1em;
+}
+
+.sidebar-par {
+	background-color: cornflowerblue;
+}
+
+.arrow {
+	margin: 0.75em auto;
+	height: 1.5em;
+	display: block;
+	width: 1.5em;
+}
+
+
+
+.sections {
+	height: 105vh;
+	background-color: green;
+}
+
+
+.footer {
+	height: 105vh;
+	background-color: aquamarine;
+}
+
+@media (min-width: 550px) {
+	.buttons {
+		display: block;
+	}
+
+	.list {
+		display: none;
+	}
+}
