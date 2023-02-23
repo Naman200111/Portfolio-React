@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 *,
 *::after,
@@ -9,20 +10,33 @@
 }
 
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display: inline-block;
 }
 
 .name {
 	font-family: 'Zeyada', cursive;
 	font-weight: bolder;
 	font-size: 1.5em;
-	margin: 1em;
+	margin: 0.75em 1em;
+	cursor: pointer;
 }
 
 .buttons {
 	display: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Inter', sans-serif;
+	text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.20);
+}
+
+.buttons button:hover {
+	background-color: darkcyan;
+	transition-duration: 0.2s;
 }
 
 .buttons-sidebar {
@@ -31,30 +45,23 @@
 }
 
 .buttons-sidebar button {
-	margin: 1.25em;
-	padding: 0.5em;
-	border: 1px solid black;
-	border-radius: 5px;
+	margin: 0.7rem auto;
+	width: 70%;
+	padding: 1.25rem;
+	font-size: 1rem;
 }
 
 .list {
-	height: 1.5em;
+	height: 2.5em;
 	width: 1.5em;
 	margin: 1em;
 }
 
-.sidebar-par {
-	background-color: cornflowerblue;
+.sidebar-hamburger {
+	position: fixed;
+	right: 0;
+	display: inline-block;
 }
-
-.arrow {
-	margin: 0.75em auto;
-	height: 1.5em;
-	display: block;
-	width: 1.5em;
-}
-
-
 
 .sections {
 	height: 105vh;
@@ -67,12 +74,28 @@
 	background-color: aquamarine;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 775px) {
 	.buttons {
 		display: block;
 	}
 
-	.list {
+	button {
+		margin-right: 1em;
+		padding: 0.5em;
+		border: none;
+		background-color: white;
+	}
+
+	.sidebar-hamburger {
 		display: none;
+	}
+
+	.header {
+		position: sticky;
+		top: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: white;
 	}
 }
