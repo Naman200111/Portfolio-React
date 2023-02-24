@@ -12,7 +12,7 @@ export default function Sidebar() {
     right: "0",
     top: "0",
     transform: sidebarClass ? "translateX(0%)" : "translateX(100%)",
-    transitionDuration: "0.7s",
+    transitionDuration: "0.5s",
     transitionTimingFunction: "ease-in-out",
     width: "70%",
     height: "100%",
@@ -24,18 +24,20 @@ export default function Sidebar() {
   }
   return (
     <div className='sidebar-hamburger'>
-        <div className="hamburger" style={hamburgerStyle}>
+        <div className="hamburger" style={hamburgerStyle}> 
           <BsList onClick={handleClick} className='list'/>
         </div>
 
         <div style={sidebarStyle} className='buttons buttons-sidebar'>
-          <AiOutlineArrowRight onClick={handleClick} className='list'/>
-          <button><a href='#home'>Home</a></button>
-          <button><a href='#about me'>About Me</a></button>
-          <button><a href='#experience'>Experience</a></button>
-          <button><a href='#projects'>Projects</a></button>
-          <button><a href='#skills'>Skills</a></button>
-          <button><a href='#contact me'>Contact Me</a></button>
+          <div className="bug-arrow-class">
+            <AiOutlineArrowRight onClick={handleClick} className='list'/>
+          </div>
+          <a href='#home'><button onClick={handleClick}>Home</button></a>
+          <a href='#about me'><button onClick={handleClick}>About Me</button></a>
+          <a href='#experience'><button onClick={handleClick}>Experience</button></a>
+          <a href='#project'><button onClick={handleClick}>Projects</button></a>
+          <a href='#skills'><button onClick={handleClick}>Skills</button></a>
+          <a href='#contact me'><button onClick={handleClick}>Contact Me</button></a>
         </div>
     </div>
   )

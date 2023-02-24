@@ -9,6 +9,17 @@
 	padding: 0;
 }
 
+img {
+	max-width: 100%;
+}
+
+.header-sidebar {
+	background-color: white;
+	position: sticky;
+	top: 0;
+	box-shadow: rgb(0, 0, 0) 1px 2px 10px 0px;
+}
+
 .header {
 	display: inline-block;
 }
@@ -26,29 +37,34 @@
 }
 
 a {
-	text-decoration: none;
-	color: black;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-family: 'Inter', sans-serif;
-	text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.20);
+	margin: 0rem auto 2rem;
+	width: 70%;
 }
 
 .buttons button:hover {
 	background-color: darkcyan;
 	transition-duration: 0.2s;
+	/* padding-bottom: 2px; */
+	border-bottom-style: solid;
+	border-radius: 5px;
+	transition-delay: 25ms;
 }
 
 .buttons-sidebar {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 .buttons-sidebar button {
-	margin: 0.7rem auto;
-	width: 70%;
-	padding: 1.25rem;
-	font-size: 1rem;
+	user-select: none;
+	width: 100%;
+	padding: 1.15rem;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Inter', sans-serif;
+	/* text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.20); */
 }
 
 .list {
@@ -64,8 +80,43 @@ a {
 }
 
 .sections {
-	height: 105vh;
-	background-color: green;
+	background-color: lightskyblue;
+	display: flex;
+	flex-direction: column;
+}
+
+.home {
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
+}
+
+.my-image-div {
+	max-width: 60%;
+}
+
+.my-image {
+	max-height: 30em;
+	border-radius: 200px;
+}
+
+.my-intro {
+
+	align-self: flex-start;
+	font-family: 'Inter', 'sans-serif';
+}
+
+.intro-name {
+	/* font-size: 3.5em; */
+	font-size: 2.50em;
+}
+
+.brief-me {
+	/* font-size: 1.25em; */
+	font-size: 1.15em;
+	margin-top: 0.5em;
 }
 
 
@@ -74,7 +125,14 @@ a {
 	background-color: aquamarine;
 }
 
-@media (min-width: 775px) {
+@media (min-width: 355px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+/* 775 */
+@media (min-width: 801px) {
 	.buttons {
 		display: block;
 	}
@@ -84,6 +142,15 @@ a {
 		padding: 0.5em;
 		border: none;
 		background-color: white;
+	}
+
+	a {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'Inter', sans-serif;
+		/* text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.20); */
+		text-decoration: none;
+		color: black;
 	}
 
 	.sidebar-hamburger {
@@ -97,5 +164,16 @@ a {
 		justify-content: space-between;
 		align-items: center;
 		background-color: white;
+	}
+
+	.home {
+		flex-direction: row;
+		justify-content: space-around;
+		gap: 0;
+	}
+
+	.my-intro {
+		align-self: center;
+		margin: 0.75em;
 	}
 }
