@@ -8,15 +8,7 @@ export default function Sidebar() {
     setSideBarClass(prevValue => !prevValue)
   }
   const sidebarStyle = {
-    position: "fixed",
-    right: "0",
-    top: "0",
-    transform: sidebarClass ? "translateX(0%)" : "translateX(100%)",
-    transitionDuration: "0.5s",
-    transitionTimingFunction: "ease-in-out",
-    width: "70%",
-    height: "100%",
-    backgroundColor: "darkcyan",
+    transform: sidebarClass ? "translateX(0%)" : "translateX(100%)"
   }
 
   const hamburgerStyle = {
