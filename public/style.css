@@ -89,22 +89,26 @@ a {
 .sections {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
 	color: #dee1e5;
 	background-color: #212766;
 }
 
+
 section {
-	margin: 1rem;
+	margin: 2rem 1rem;
+	/* width: 85%; */
 }
 
+/* .section{
+	margin-top: ;
+} */
+
 .home {
-	/* margin: 1.75em; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 2.5em;
-	width: 75%;
 }
 
 .my-image {
@@ -132,30 +136,72 @@ section {
 	font-family: 'Inter', sans-serif;
 	display: flex;
 	flex-direction: column;
-	gap: 4em;
-	width: 85%;
+	gap: 2em;
 }
 
 .about_me--heading {
-	font-size: 2em;
+	font-size: 2.5em;
+	text-align: center;
 }
 
 .about_me-desc--div {
 	display: flex;
 	flex-direction: column-reverse;
-	gap: 2.5em;
+	gap: 1.5em;
 }
 
 .about_me--description {
 	color: lightgray;
-	margin-top: 1.25em;
+	/* margin-top: 1.25em; */
 	font-size: 0.75em;
 }
 
 .my-image-back {
-	max-width: 80%;
+	/* max-width: 80%; */
 	align-self: center;
 }
+
+.work_experience {
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 4em;
+}
+
+.experience {
+	margin-bottom: 3em;
+}
+
+.experience--div {
+	margin-top: 2em;
+}
+
+.experience_details {
+	margin-top: 1.5em;
+}
+
+.experience_header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 0.25em;
+}
+
+.duration {
+	font-size: 0.75em;
+	/* padding-top: 0.25em; */
+}
+
+.experience_work {
+	margin: 1.5em;
+	font-size: 0.75em;
+}
+
+.experience_work ul li {
+	margin-bottom: 0.5em;
+}
+
+
 
 .footer {
 	height: 105vh;
@@ -166,19 +212,64 @@ section {
 	html {
 		font-size: 20px;
 	}
+}
+
+@media (min-width: 510px) {
+	.my-image-back {
+		max-width: 80%;
+	}
+
+	.about_me--description {
+		margin: 0 1.5em;
+	}
+
+	.experience_header {
+		flex-direction: row;
+	}
+
+	.duration {
+		padding-top: 0.25em;
+	}
+}
+
+@media (min-width: 728px) {
+	/* .about_me-desc--div {
+		flex-direction: row-reverse;
+	}
+
+	.my-image-back {
+		max-width: 40%;
+	}
+
+	.about_me--description {
+		align-self: center;
+		line-height: 1.5em;
+
+	}
+
+	.about_me-desc--div {
+		justify-content: space-evenly;
+		gap: 4em;
+	}
+
+	.sections {
+		align-items: center;
+	}
 
 	section {
-		margin: 1.75rem;
+		width: 85%;
 	}
+
+	.experience {
+		display: flex;
+		align-items: center;
+		gap: 2em;
+	} */
 }
 
 @media (min-width: 801px) {
 	html {
 		font-size: 20px;
-	}
-
-	section {
-		margin: 1.75rem;
 	}
 
 	.buttons {
@@ -219,11 +310,15 @@ section {
 
 	.my-intro {
 		align-self: center;
-		/* margin: 0.75em; */
 	}
 
 	.about_me {
-		max-width: 75%;
+		gap: 4em;
+	}
+
+	.about_me--description {
+		font-size: 0.8em;
+		max-width: 45%;
 	}
 
 	.about_me-desc--div {
@@ -232,12 +327,12 @@ section {
 
 	.my-image-back {
 		max-width: 40%;
-		/* align-self: center; */
 	}
 
 	.about_me--description {
 		align-self: center;
 		line-height: 1.5em;
+
 	}
 
 	.about_me-desc--div {
@@ -245,8 +340,39 @@ section {
 		gap: 4em;
 	}
 
-	.about_me {
-		width: 75%;
+	.sections {
+		align-items: center;
 	}
 
+	section {
+		width: 85%;
+	}
+
+	.experience {
+		display: flex;
+		align-items: center;
+		gap: 2em;
+	}
+
+	.experience_header {
+		flex-direction: column;
+	}
+
+	.duration {
+		padding-top: 0;
+	}
+}
+
+@media (min-width: 1120px) {
+	.experience {
+		gap: 4em;
+	}
+
+	.experience_header {
+		flex-direction: row;
+	}
+
+	.duration {
+		padding-top: 0.25em;
+	}
 }
