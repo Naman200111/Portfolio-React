@@ -344,9 +344,6 @@ section {
 		align-items: center;
 	}
 
-	section {
-		width: 85%;
-	}
 
 	.experience {
 		display: flex;
@@ -364,6 +361,14 @@ section {
 }
 
 @media (min-width: 1120px) {
+	.home {
+		gap: 5em;
+	}
+
+	section {
+		max-width: 70%;
+	}
+
 	.experience {
 		gap: 4em;
 	}
