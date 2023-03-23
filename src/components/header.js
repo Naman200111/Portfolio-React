@@ -21,21 +21,21 @@ export default function Header() {
 				<div className="bug-arrow-class">
 					<AiOutlineArrowRight onClick={handleClick} className='list'/>
 				</div>
-				<a href='#home'><button onClick={handleClick}>Home</button></a>
-				<a href='#about me'><button onClick={handleClick}>About Me</button></a>
-				<a href='#experience'><button onClick={handleClick}>Experience</button></a>
-				<a href='#project'><button onClick={handleClick}>Projects</button></a>
-				<a href='#skills'><button onClick={handleClick}>Skills</button></a>
-				<a href='#contact me'><button onClick={handleClick}>Contact Me</button></a>
+				<a className='button-anchor' href='#home'><button onClick={handleClick}>Home</button></a>
+				<a className='button-anchor' href='#about me'><button onClick={handleClick}>About Me</button></a>
+				<a className='button-anchor' href='#experience'><button onClick={handleClick}>Experience</button></a>
+				<a className='button-anchor' href='#project'><button onClick={handleClick}>Projects</button></a>
+				<a className='button-anchor' href='#skills'><button onClick={handleClick}>Skills</button></a>
+				<a className='button-anchor' href='#contact me'><button onClick={handleClick}>Contact Me</button></a>
 			</div>
 
 			<div className='buttons'>
-				<button><a href='#home'>Home</a></button>
-				<button><a href='#about me'>About Me</a></button>
-				<button><a href='#experience'>Experience</a></button>
-				<button><a href='#projects'>Projects</a></button>
-				<button><a href='#skills'>Skills</a></button>
-				<button><a href='#contact me'>Contact Me</a></button>
+				<button><a className='button-anchor' href='#home'>Home</a></button>
+				<button><a className='button-anchor' href='#about me'>About Me</a></button>
+				<button><a className='button-anchor' href='#experience'>Experience</a></button>
+				<button><a className='button-anchor' href='#projects'>Projects</a></button>
+				<button><a className='button-anchor' href='#skills'>Skills</a></button>
+				<button><a className='button-anchor' href='#contact me'>Contact Me</a></button>
 			</div>
 		</div>
 	)
