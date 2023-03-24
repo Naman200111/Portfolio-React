@@ -211,16 +211,14 @@ section {
 	display: flex;
 	align-items: center;
 	gap: 1em;
-
+	background: lightgrey;
+	padding: 1.5em;
+	border-radius: 10px;
+	color: black;
 }
 
 .project-img {
 	display: none;
-	/* width: 100px; */
-}
-
-.project-smallLogo {
-	width: 45px;
 }
 
 .project-desc {
@@ -234,19 +232,17 @@ section {
 	justify-content: space-between;
 	display: flex;
 	align-items: center;
+	gap: 0.25em;
 }
+
 
 .project-heading {
 	font-size: 1.25em;
 	line-height: 1.15em;
 }
 
-/* .project-peroid {
-	margin-bottom: 0.5em;
-} */
-
 .project-para {
-	max-width: 75%;
+	margin-top: 0.75em;
 }
 
 .project-links {
@@ -257,22 +253,22 @@ section {
 }
 
 .project-link--github {
-	color: white;
+	color: black;
 }
 
 .project-link--anchor {
-	color: white;
+	color: black;
 }
 
 .project_techs {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+	grid-template-columns: repeat(2, 1fr);
 	gap: 0.5em;
 	text-align: center;
 }
 
 .tech {
-	background-color: rgb(99 96 96);
+	background-color: #1a1a1a;
 	padding: 0.25em;
 	color: white;
 	border-radius: 5px;
@@ -284,21 +280,22 @@ section {
 }
 
 @media (min-width: 356px) {
-	.project-img {
+	/* .project-img {
 		display: inline-block;
 		width: 60%;
 		padding: 0.5em;
 		border-radius: 10px;
 		background: lightgrey;
-	}
-
-	.project-smallLogo {
-		display: none;
-	}
+	} */
 
 	.project-para {
 		max-width: 100%;
-		margin-top: 0.5em;
+	}
+
+	.project-desc--start {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
 	}
 }
 
@@ -316,11 +313,22 @@ section {
 	}
 
 	.project {
-		gap: 2.5em;
+		padding: 1em;
+		/* gap: 2.5em; */
 	}
 
 	.project-img {
-		width: 50%;
+		display: inline-block;
+		width: 60%;
+		padding: 0.5em;
+		border-radius: 10px;
+		background: lightgrey;
+	}
+
+	.project-desc--start {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
 	}
 }
 
@@ -403,10 +411,16 @@ section {
 		padding-top: 0.25em;
 	}
 
-	/* .projects--div {
+	.projects--div {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	} */
+		gap: 1.25em;
+		grid-template-columns: repeat(2, 1fr)
+	}
+
+	.project-desc--start {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 @media (min-width: 960px) {

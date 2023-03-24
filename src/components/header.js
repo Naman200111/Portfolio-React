@@ -24,7 +24,7 @@ export default function Header() {
 				<a className='button-anchor' href='#home'><button onClick={handleClick}>Home</button></a>
 				<a className='button-anchor' href='#about me'><button onClick={handleClick}>About Me</button></a>
 				<a className='button-anchor' href='#experience'><button onClick={handleClick}>Experience</button></a>
-				<a className='button-anchor' href='#project'><button onClick={handleClick}>Projects</button></a>
+				<a className='button-anchor' href='#projects'><button onClick={handleClick}>Projects</button></a>
 				<a className='button-anchor' href='#skills'><button onClick={handleClick}>Skills</button></a>
 				<a className='button-anchor' href='#contact me'><button onClick={handleClick}>Contact Me</button></a>
 			</div>

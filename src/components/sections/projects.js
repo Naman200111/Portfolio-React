@@ -18,8 +18,8 @@ export default function projects() {
               <div className="project-desc--heading">
                 <h4 className="project-heading">Quizzical</h4>
               </div>
-              <div className="project-smallLogo">
-                <img src="./images/quiz.png" alt="Project Logo"></img>
+              <div className="project-duration">
+                <p>December 2022</p>
               </div>
             </div>
             <p className="project-para">
@@ -59,11 +59,8 @@ export default function projects() {
               <div className="project-desc--heading">
                 <h4 className="project-heading">Wallpaper Love</h4>
               </div>
-              <div className="project-smallLogo">
-                <img
-                  src="./images/wallpaper-love-modified.png"
-                  alt="Project Logo"
-                ></img>
+              <div className="project-duration">
+                <p>January 2022</p>
               </div>
             </div>
             <p className="project-para">
@@ -94,8 +91,8 @@ export default function projects() {
               <div className="project-desc--heading">
                 <h4 className="project-heading">MarvelQuotes-EpicGames</h4>
               </div>
-              <div className="project-smallLogo">
-                <img src="./images/epic-modified.png" alt="Project Logo"></img>
+              <div className="project-duration">
+                <p>January 2022</p>
               </div>
             </div>
             <p className="project-para">
