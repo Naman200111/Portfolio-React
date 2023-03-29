@@ -13,14 +13,6 @@ export default function Sections() {
       <Experience />
       <Projects />
       <Skills />
-
-
-
-
-
-      
-      
-      <section className="section contact_me" id='contact me'></section>
     </div>
   )
 }

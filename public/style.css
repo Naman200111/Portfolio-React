@@ -274,9 +274,120 @@ section {
 	border-radius: 5px;
 }
 
+
+.skills {
+	width: 100%;
+	gap: 1.5em;
+}
+
+.skills-div {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25em;
+}
+
+.skill {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5em
+}
+
+.skill_bar {
+	margin-top: 10px;
+	width: 100%;
+	height: 10px;
+	background-color: grey;
+	border-radius: 10px;
+}
+
+.skill_bar_color {
+	height: 10px;
+	background-color: cadetblue;
+	border-radius: 10px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.C_prog {
+	width: 96%;
+}
+
+.DSA {
+	width: 93%;
+}
+
+.oops {
+	width: 80%;
+}
+
+.js {
+	width: 84%;
+}
+
+.react {
+	width: 82%;
+}
+
+.HTML {
+	width: 92%
+}
+
+.CSS {
+	width: 88%;
+}
+
 .footer {
-	height: 105vh;
-	background-color: aquamarine;
+	padding: 1.5em;
+	background-color: black;
+	color: white;
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-header {
+	margin: 1em auto;
+}
+
+.footer-content {
+	margin-bottom: 1em;
+}
+
+.footer-links {
+	margin-bottom: 1em;
+}
+
+.social-media-anchor {
+	color: white;
+}
+
+.link {
+	padding: 0.5em;
+}
+
+.icon {
+	height: 1.5em;
+	width: 1.5em;
+}
+
+.footer-ending {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-ending p {
+	text-align: center;
+}
+
+.code-reference {
+	color: white;
+	margin: 1em 0em;
+	display: flex;
+	gap: 0.25em;
+	text-decoration: none;
 }
 
 @media (min-width: 356px) {
@@ -329,6 +440,11 @@ section {
 		display: flex;
 		align-items: center;
 		flex-direction: row;
+	}
+
+	.skill-div {
+		width: 90%;
+		margin: 0 auto;
 	}
 }
 
@@ -420,6 +536,10 @@ section {
 	.project-desc--start {
 		flex-direction: column;
 		align-items: flex-start;
+	}
+
+	.skills-div {
+		width: 70%;
 	}
 }
 
