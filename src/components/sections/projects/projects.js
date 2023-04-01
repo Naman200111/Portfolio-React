@@ -1,4 +1,5 @@
 import React from "react";
+import './projects.css'
 import { SiGithub } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
 

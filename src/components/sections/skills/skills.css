@@ -1,0 +1,73 @@
+.skills {
+	width: 100%;
+}
+
+.skills-div {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25em;
+}
+
+.skill {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5em
+}
+
+.skill_bar {
+	margin-top: 10px;
+	width: 100%;
+	height: 10px;
+	background-color: grey;
+	border-radius: 10px;
+}
+
+.skill_bar_color {
+	height: 10px;
+	background-color: cadetblue;
+	border-radius: 10px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.C_prog {
+	width: 96%;
+}
+
+.DSA {
+	width: 93%;
+}
+
+.oops {
+	width: 80%;
+}
+
+.js {
+	width: 84%;
+}
+
+.react {
+	width: 82%;
+}
+
+.HTML {
+	width: 92%
+}
+
+.CSS {
+	width: 88%;
+}
+
+@media (min-width: 478px) {
+	.skill-div {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 678px) {
+	.skills-div {
+		width: 70%;
+	}
+}

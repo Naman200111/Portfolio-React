@@ -1,8 +1,9 @@
 import React from 'react'
+import './footer.css'
+
 import { SiGithub } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
 import { SiTwitter } from "react-icons/si";
-import { SiGmail } from "react-icons/si";
 import { SiLeetcode } from "react-icons/si";
 
 export default function Footer() {
@@ -32,12 +33,10 @@ export default function Footer() {
 
 			<div className="footer-ending">
 				<p>Build and Designed by Naman Agrawal</p>
-				{/* <div class="code-reference"> */}
 					<a className='code-reference' href="https://github.com/Naman200111/Portfolio-React">
 						<SiGithub />
 						<p>Github</p>
 					</a>
-				{/* </div> */}
 			</div>
 
 		</div>

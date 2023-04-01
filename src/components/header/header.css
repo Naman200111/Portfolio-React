@@ -1,0 +1,191 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.name {
+	font-family: 'Zeyada', cursive;
+	font-weight: bolder;
+	font-size: 1.5em;
+	margin: 0.75rem 0rem 0.75rem 1.25rem;
+	cursor: pointer;
+}
+
+.hamburger-icon {
+	margin: 1em;
+}
+
+.buttons {
+	display: none;
+}
+
+.button-anchor {
+	margin: 0rem auto 2rem;
+	width: 70%;
+}
+
+.buttons button:hover {
+	background-color: lightseagreen;
+	transition-duration: 0.2s;
+	border-radius: 5px;
+	transition-delay: 25ms;
+	border: none;
+}
+
+.buttons-sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: cadetblue;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.buttons-sidebar button {
+	user-select: none;
+	width: 100%;
+	padding: 1rem;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	font-family: 'Inter', sans-serif;
+}
+
+button {
+	font-size: 0.75em;
+}
+
+.bug-arrow-class {
+	margin: 1em;
+}
+
+.list {
+	height: 2.5em;
+	width: 1.5em;
+}
+
+@media (min-width: 478px) {
+	.buttons-sidebar button {
+		padding: 0.75rem;
+	}
+}
+
+@media (min-width: 678px) {
+	html {
+		font-size: 18px;
+	}
+
+	.name {
+		margin: 1rem 0rem 0.75rem 0.75rem;
+	}
+
+	.buttons {
+		display: block;
+		margin-right: 1rem;
+	}
+
+	button {
+		font-size: 0.6em;
+		padding: 0.5rem;
+		border: none;
+		background-color: white;
+	}
+
+	.button-anchor {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'Inter', sans-serif;
+		text-decoration: none;
+		color: black;
+	}
+
+
+	.hamburger-icon {
+		display: none;
+	}
+
+	.home {
+		flex-direction: row;
+		justify-content: space-evenly;
+		gap: 1em;
+	}
+
+	.my-intro {
+		align-self: center;
+	}
+
+	.section-desc--div {
+		flex-direction: row-reverse;
+		align-items: center;
+		max-width: 100%;
+	}
+
+	.my-image-div {
+		max-width: 50%;
+	}
+
+	.my-image-back {
+		max-width: 50%;
+	}
+
+	.about_me--description {
+		font-size: 0.75em;
+	}
+
+	.experience_header {
+		flex-direction: column;
+	}
+
+	.experience-logo {
+		max-width: 50%;
+	}
+
+	.experience_work {
+		font-size: 0.75em;
+		line-height: 1.5em;
+	}
+
+	.duration {
+		padding-top: 0.25em;
+	}
+
+	.projects--div {
+		display: grid;
+		gap: 1.25em;
+		grid-template-columns: repeat(2, 1fr)
+	}
+
+	.project-desc--start {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.skills-div {
+		width: 70%;
+	}
+}
+
+@media (min-width: 960px) {
+	.name {
+		margin: 1rem 0rem 0.75rem 2rem;
+	}
+
+	.buttons {
+		margin-right: 2rem;
+	}
+
+	button {
+		font-size: 0.7em;
+		margin-left: 1rem;
+		padding: 0.5rem;
+	}
+}

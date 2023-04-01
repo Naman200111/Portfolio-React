@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BsList } from 'react-icons/bs'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import './header.css'
 
 export default function Header() {
 	const [sidebarClass, setSideBarClass] = useState(false)

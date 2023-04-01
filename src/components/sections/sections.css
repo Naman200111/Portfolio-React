@@ -1,0 +1,31 @@
+.sections {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #dee1e5;
+	background-color: #212766;
+}
+
+@media (min-width: 478px) {
+	.sections {
+		padding: 1em;
+	}
+}
+
+@media (min-width: 678px) {
+	.sections {
+		padding: 2em;
+	}
+}
+
+@media (min-width: 960px) {
+	.sections {
+		gap: 5em;
+	}
+}
+
+@media (min-width: 1600px) {
+	.sections {
+		padding: 5em;
+	}
+}

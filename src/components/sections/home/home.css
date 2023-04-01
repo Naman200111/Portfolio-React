@@ -1,0 +1,48 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2.5em;
+}
+
+.my-intro {
+	align-self: flex-start;
+	font-family: 'Inter', 'sans-serif';
+}
+
+.intro-name {
+	font-size: 2.30em;
+}
+
+.brief-me {
+	height: 1.5em;
+	font-size: 0.8em;
+	margin-top: 1em;
+	line-height: 1.25rem;
+}
+
+.my-image {
+	border-radius: 300px;
+}
+
+@media (min-width: 478px) {
+	.my-image-div {
+		max-width: 80%;
+	}
+}
+
+@media (min-width: 678px) {
+	.home {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 1em;
+	}
+
+	.my-intro {
+		align-self: center;
+	}
+
+	.my-image-div {
+		max-width: 50%;
+	}
+}

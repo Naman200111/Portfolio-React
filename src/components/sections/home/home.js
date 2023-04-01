@@ -1,4 +1,5 @@
 import React from 'react'
+import './home.css'
 import Typical from 'react-typical'
 import Roll from 'react-reveal/Roll'
 
