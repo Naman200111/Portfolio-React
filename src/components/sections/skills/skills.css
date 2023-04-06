@@ -1,5 +1,17 @@
 .skills {
 	width: 100%;
+	margin: 2rem 1rem;
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3em;
+	max-width: 960px;
+}
+
+.skills--heading {
+	font-size: 2.5em;
+	text-align: center;
 }
 
 .skills-div {
@@ -7,6 +19,17 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1.25em;
+}
+
+.skill-div {
+	opacity: 0;
+	transition: .5s ease-in-out;
+	transform: translateY(-50%)
+}
+
+.show {
+	opacity: 1 !important;
+	transform: translateY(0%) !important;
 }
 
 .skill {
@@ -69,5 +92,6 @@
 @media (min-width: 678px) {
 	.skills-div {
 		width: 70%;
+		transition: 1s ease-in-out;
 	}
 }

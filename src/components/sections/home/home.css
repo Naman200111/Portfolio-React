@@ -1,8 +1,11 @@
 .home {
+	margin: 2rem 1rem;
+	font-family: 'Inter', sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 2.5em;
+	gap: 3em;
+	max-width: 960px;
 }
 
 .my-intro {
@@ -15,10 +18,22 @@
 }
 
 .brief-me {
-	height: 1.5em;
+	/* height: 1.5em; */
+	color: lightgrey;
 	font-size: 0.8em;
 	margin-top: 1em;
 	line-height: 1.25rem;
+}
+
+.my-image-div {
+	transform: translateY(-10%);
+	opacity: 0;
+	transition: .5s ease-in-out;
+}
+
+.show {
+	opacity: 1 !important;
+	transform: translateY(0%) !important;
 }
 
 .my-image {
@@ -29,13 +44,21 @@
 	.my-image-div {
 		max-width: 80%;
 	}
+
+	.brief-me {
+		width: 80%;
+	}
 }
 
 @media (min-width: 678px) {
 	.home {
 		flex-direction: row;
 		justify-content: space-between;
-		gap: 1em;
+		gap: 3em;
+	}
+
+	.brief-me {
+		width: 100%;
 	}
 
 	.my-intro {

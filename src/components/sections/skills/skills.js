@@ -1,14 +1,43 @@
 import React from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './skills.css'
 
-export default function skills() {
+export default function Skills() {
+    const [isIntersecting, setIsIntersecting] = useState()
+    const myRef = useRef();
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0]
+        setIsIntersecting(entry.isIntersecting)
+        },
+        )
+        observer.observe(myRef.current)
+        return () => observer.disconnect();
+
+    }, [isIntersecting])
+
+    useEffect(() => {
+        if(isIntersecting) {
+        myRef.current.querySelectorAll("div").forEach(child => {
+            child.classList.add("show")
+        })
+        }
+        else {
+        myRef.current.querySelectorAll("div").forEach(child => {
+            child.classList.remove("show")
+        })
+        }
+    }, [isIntersecting])
+
+
     return (
-        <section className="section skills" id='skills'>
-            <div className="section--heading">
+        <section className="skills" id='skills'>
+            <div className="skills--heading">
                 <h4>Skills</h4>
             </div>
 
-            <div class="skills-div">
+            <div className="skills-div" ref={myRef}>
                 <div className='skill-div'>
                     <div className='skill'>
                         <p className='skill_name '>C++ Programming</p>

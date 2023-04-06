@@ -27,7 +27,6 @@ export default function Header() {
 				<a className='button-anchor' href='#experience'><button onClick={handleClick}>Experience</button></a>
 				<a className='button-anchor' href='#projects'><button onClick={handleClick}>Projects</button></a>
 				<a className='button-anchor' href='#skills'><button onClick={handleClick}>Skills</button></a>
-				<a className='button-anchor' href='#contact me'><button onClick={handleClick}>Contact Me</button></a>
 			</div>
 
 			<div className='buttons'>
@@ -36,7 +35,6 @@ export default function Header() {
 				<button><a className='button-anchor' href='#experience'>Experience</a></button>
 				<button><a className='button-anchor' href='#projects'>Projects</a></button>
 				<button><a className='button-anchor' href='#skills'>Skills</a></button>
-				<button><a className='button-anchor' href='#contact me'>Contact Me</a></button>
 			</div>
 		</div>
 	)

@@ -2,15 +2,44 @@ import React from "react";
 import './projects.css'
 import { SiGithub } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
+import { useState, useRef, useEffect } from 'react'
 
-export default function projects() {
+export default function Projects() {
+  const [isIntersecting, setIsIntersecting] = useState()
+  const myRef = useRef();
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0]
+      setIsIntersecting(entry.isIntersecting)
+    },
+    )
+    observer.observe(myRef.current)
+    return () => observer.disconnect();
+
+  }, [isIntersecting])
+
+  useEffect(() => {
+    if(isIntersecting) {
+      myRef.current.querySelectorAll("div").forEach(child => {
+        child.classList.add("show")
+      })
+    }
+    else {
+      myRef.current.querySelectorAll("div").forEach(child => {
+        child.classList.remove("show")
+      })
+    }
+  }, [isIntersecting])
+
+
   return (
-    <section className="section" id="projects">
-      <div className="section--heading">
+    <section className="projects" id="projects">
+      <div className="projects--heading">
         <h4>Projects</h4>
       </div>
-      <div className="projects--div">
-        <div className="project">
+      <div className="projects--div" ref={myRef}>
+        <div className="project left">
           <div className="project-img">
             <img src="./images/quiz.png" alt="Project Logo"></img>
           </div>
@@ -48,7 +77,7 @@ export default function projects() {
           </div>
         </div>
 
-        <div className="project">
+        <div className="project right">
           <div className="project-img">
             <img
               src="./images/wallpaper-love-modified.png"
@@ -83,7 +112,7 @@ export default function projects() {
           </div>
         </div>
 
-        <div className="project">
+        <div className="project left">
           <div className="project-img">
             <img src="./images/epic-modified.png" alt="Project Logo"></img>
           </div>

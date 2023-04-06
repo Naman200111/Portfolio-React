@@ -18,7 +18,7 @@ img {
 	flex-direction: column;
 }
 
-section {
+/* section {
 	margin: 2rem 1rem;
 	font-family: 'Inter', sans-serif;
 	display: flex;
@@ -31,42 +31,32 @@ section {
 .section--heading {
 	font-size: 2.5em;
 	text-align: center;
-}
+} */
 
-.section-desc--div {
+/* .section-desc--div {
 	display: flex;
 	flex-direction: column-reverse;
 	gap: 1.5em;
 	max-width: 90%;
-}
+} */
+
+/* .show {
+	opacity: 1;
+	transform: translateX(0%);
+} */
 
 @media (min-width: 478px) {
 	html {
 		font-size: 18px;
 	}
-
-	/* .sections {
-		padding: 1em;
-	} */
 }
 
 @media (min-width: 678px) {
-	/* html {
-		font-size: 18px;
-	} */
-
-	/* .sections {
-		padding: 2em;
-	} */
-
-	.section-desc--div {
+	/* .section-desc--div {
 		flex-direction: row-reverse;
 		align-items: center;
 		max-width: 100%;
-	}
-
-
-
+	} */
 }
 
 @media (min-width: 960px) {
@@ -74,21 +64,13 @@ section {
 		font-size: 20px;
 	}
 
-	/* .sections {
-		padding: 3em;
-	} */
-
-	.section-desc--div {
+	/* .section-desc--div {
 		gap: 3em;
-	}
+	} */
 }
 
 @media (min-width: 1600px) {
 	html {
 		font-size: 24px;
 	}
-
-	/* section {
-		max-width: 70%;
-	} */
 }
