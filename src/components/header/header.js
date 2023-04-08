@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { BsList } from 'react-icons/bs'
-import { AiOutlineArrowRight } from 'react-icons/ai'
+import { AiOutlineArrowRight, AiOutlineHome, AiOutlineProfile } from 'react-icons/ai'
+import { MdWorkOutline } from "react-icons/md";
+import { BsStack } from "react-icons/bs";
+import { GiSkills } from "react-icons/gi";
 import './header.css'
 
 export default function Header() {
@@ -19,22 +22,37 @@ export default function Header() {
 			</div>
 
 			<div style={sidebarStyle} className='buttons buttons-sidebar'>
-				<div className="bug-arrow-class">
-					<AiOutlineArrowRight onClick={handleClick} className='list'/>
+				<div className="bug-arrow-class" >
+					<AiOutlineArrowRight className='list' onClick={handleClick}/>
 				</div>
-				<a className='button-anchor' href='#home'><button onClick={handleClick}>Home</button></a>
-				<a className='button-anchor' href='#about me'><button onClick={handleClick}>About Me</button></a>
-				<a className='button-anchor' href='#experience'><button onClick={handleClick}>Experience</button></a>
-				<a className='button-anchor' href='#projects'><button onClick={handleClick}>Projects</button></a>
-				<a className='button-anchor' href='#skills'><button onClick={handleClick}>Skills</button></a>
+				<a className='button-anchor' href='#home' onClick={handleClick}>
+					<AiOutlineHome className='ham-icons'/>
+					<p>Home</p>
+				</a>
+				<a className='button-anchor' href='#aboutMe' onClick={handleClick}>
+					<AiOutlineProfile className='ham-icons'/>
+					<p>About Me</p>
+				</a>
+				<a className='button-anchor' href='#experience' onClick={handleClick}>
+					<MdWorkOutline className='ham-icons'/>
+					<p>Experience</p>
+				</a>
+				<a className='button-anchor' href='#projects' onClick={handleClick}>
+					<BsStack className='ham-icons'/>
+					<p>Projects</p>
+				</a>
+				<a className='button-anchor' href='#skills' onClick={handleClick}>
+					<GiSkills className='ham-icons'/>
+					<p>Skills</p>
+				</a>
 			</div>
 
 			<div className='buttons'>
-				<button><a className='button-anchor' href='#home'>Home</a></button>
-				<button><a className='button-anchor' href='#about me'>About Me</a></button>
-				<button><a className='button-anchor' href='#experience'>Experience</a></button>
-				<button><a className='button-anchor' href='#projects'>Projects</a></button>
-				<button><a className='button-anchor' href='#skills'>Skills</a></button>
+				<a className='header-button-anchor' href='#home'>Home</a>
+				<a className='header-button-anchor' href='#aboutMe'>About Me</a>
+				<a className='header-button-anchor' href='#experience'>Experience</a>
+				<a className='header-button-anchor' href='#projects'>Projects</a>
+				<a className='header-button-anchor' href='#skills'>Skills</a>
 			</div>
 		</div>
 	)

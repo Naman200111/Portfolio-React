@@ -20,12 +20,12 @@ export default function Skills() {
     useEffect(() => {
         if(isIntersecting) {
         myRef.current.querySelectorAll("div").forEach(child => {
-            child.classList.add("show")
+            child.classList.add("show-skills")
         })
         }
         else {
         myRef.current.querySelectorAll("div").forEach(child => {
-            child.classList.remove("show")
+            child.classList.remove("show-skills")
         })
         }
     }, [isIntersecting])

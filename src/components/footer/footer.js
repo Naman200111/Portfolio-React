@@ -13,7 +13,7 @@ export default function Footer() {
 				<h2>Let's Get in Touch</h2>
 			</div>
 			<div className="footer-content">
-				<p>Always waiting for getting an opportunity to get in touch with you. I will try to get back to you as soon as possible. Let make something big together.</p>
+				<p>Always waiting for an opportunity to get in touch with you. I will try my best to get back to you as soon as possible. Let build something great together.</p>
 			</div>
 			<div className="footer-links">
 				<a className='social-media-anchor link' href="https://github.com/Naman200111">

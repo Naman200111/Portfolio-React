@@ -24,48 +24,64 @@
 	display: none;
 }
 
-.button-anchor {
-	margin: 0rem auto 2rem;
-	width: 70%;
+.buttons-sidebar {
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+	display: block;
+	background-color: #212766;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	color: white;
 }
 
-.buttons button:hover {
+.button-anchor {
+	display: flex;
+	align-items: center;
+	user-select: none;
+	width: 85%;
+	margin: 0.5rem auto;
+	padding: 1rem;
+	gap: 1.25em;
+	font-family: 'Inter', sans-serif;
+	background: #212766;
+	color: #ffffffc9;
+	border: none;
+	text-decoration: none;
+}
+
+.button-anchor:hover {
 	background-color: lightseagreen;
 	transition-duration: 0.2s;
 	border-radius: 5px;
 	transition-delay: 25ms;
-	border: none;
 }
 
-.buttons-sidebar {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color: cadetblue;
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	right: 0;
-	top: 0;
-	transition-duration: 0.5s;
-	transition-timing-function: ease-in-out;
+.ham-icons {
+	width: 1.5em;
+	height: 1.5em;
 }
 
-.buttons-sidebar button {
+.header-button-anchor {
+	background: white;
+	color: black;
 	user-select: none;
-	width: 100%;
-	padding: 1rem;
-	font-size: 1.25em;
-	text-transform: uppercase;
 	font-family: 'Inter', sans-serif;
+	text-decoration: none;
+	padding: .5rem;
 }
 
-button {
-	font-size: 0.75em;
+.header-button-anchor:hover {
+	background-color: lightseagreen;
+	transition-duration: 0.2s;
+	border-radius: 5px;
+	transition-delay: 25ms;
+	border-bottom: 2px solid black;
 }
 
 .bug-arrow-class {
-	margin: 1em;
+	margin: 1.5em;
 }
 
 .list {
@@ -73,11 +89,7 @@ button {
 	width: 1.5em;
 }
 
-@media (min-width: 478px) {
-	.buttons-sidebar button {
-		padding: 0.75rem;
-	}
-}
+@media (min-width: 478px) {}
 
 @media (min-width: 678px) {
 	html {
@@ -89,32 +101,16 @@ button {
 	}
 
 	.buttons {
-		display: block;
-		margin-right: 1rem;
+		display: flex;
+		gap: .25rem;
+		margin-right: .5rem;
 	}
-
-	button {
-		font-size: 0.6em;
-		padding: 0.5rem;
-		border: none;
-		background-color: white;
-	}
-
-	.button-anchor {
-		text-transform: uppercase;
-		font-weight: bold;
-		font-family: 'Inter', sans-serif;
-		text-decoration: none;
-		color: black;
-	}
-
 
 	.hamburger-icon {
 		display: none;
 	}
 
 	.home {
-		flex-direction: row;
 		justify-content: space-evenly;
 		gap: 1em;
 	}
@@ -124,53 +120,8 @@ button {
 	}
 
 	.section-desc--div {
-		flex-direction: row-reverse;
 		align-items: center;
 		max-width: 100%;
-	}
-
-	.my-image-div {
-		max-width: 50%;
-	}
-
-	.my-image-back {
-		max-width: 50%;
-	}
-
-	.about_me--description {
-		font-size: 0.75em;
-	}
-
-	.experience_header {
-		flex-direction: column;
-	}
-
-	.experience-logo {
-		max-width: 50%;
-	}
-
-	.experience_work {
-		font-size: 0.75em;
-		line-height: 1.5em;
-	}
-
-	.duration {
-		padding-top: 0.25em;
-	}
-
-	.projects--div {
-		display: grid;
-		gap: 1.25em;
-		grid-template-columns: repeat(2, 1fr)
-	}
-
-	.project-desc--start {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.skills-div {
-		width: 70%;
 	}
 }
 
@@ -180,12 +131,7 @@ button {
 	}
 
 	.buttons {
-		margin-right: 2rem;
-	}
-
-	button {
-		font-size: 0.7em;
-		margin-left: 1rem;
-		padding: 0.5rem;
+		gap: 1rem;
+		margin-right: 1.5rem;
 	}
 }

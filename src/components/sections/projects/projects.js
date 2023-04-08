@@ -2,36 +2,34 @@ import React from "react";
 import './projects.css'
 import { SiGithub } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
-import { useState, useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react'
 
 export default function Projects() {
-  const [isIntersecting, setIsIntersecting] = useState()
   const myRef = useRef();
   
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0]
-      setIsIntersecting(entry.isIntersecting)
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add("show-projects")
+          // observer.unobserve(entry.target)
+        }
+        else {
+          entry.target.classList.remove("show-projects")
+        }
+      })
     },
+    // {
+    //   rootMargin: "-100px"
+    // }
     )
-    observer.observe(myRef.current)
-    return () => observer.disconnect();
 
-  }, [isIntersecting])
+    myRef.current.querySelectorAll(".project").forEach(child => {
+      console.log(child)
+      observer.observe(child)
+    })
 
-  useEffect(() => {
-    if(isIntersecting) {
-      myRef.current.querySelectorAll("div").forEach(child => {
-        child.classList.add("show")
-      })
-    }
-    else {
-      myRef.current.querySelectorAll("div").forEach(child => {
-        child.classList.remove("show")
-      })
-    }
-  }, [isIntersecting])
-
+  }, [])
 
   return (
     <section className="projects" id="projects">
@@ -39,7 +37,7 @@ export default function Projects() {
         <h4>Projects</h4>
       </div>
       <div className="projects--div" ref={myRef}>
-        <div className="project left">
+        <div className="project">
           <div className="project-img">
             <img src="./images/quiz.png" alt="Project Logo"></img>
           </div>
@@ -112,7 +110,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="project left">
+        <div className="project" >
           <div className="project-img">
             <img src="./images/epic-modified.png" alt="Project Logo"></img>
           </div>

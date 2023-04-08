@@ -32,22 +32,16 @@
 
 	opacity: 0;
 	transition: .5s ease-in-out;
-	transform: translateY(-10%)
+	transform: translateX(-100%)
 }
 
-/* .left {
-	transform: translateX(-150%);
-
+.show-projects {
+	opacity: 1 !important;
+	transform: translateX(0%) !important;
 }
 
 .right {
-	transform: translateX(150%);
-
-} */
-
-.show {
-	opacity: 1 !important;
-	transform: translateY(0%) !important;
+	transform: translateX(-100%);
 }
 
 .project-img {
@@ -156,12 +150,7 @@
 		transition: 1s ease-in-out;
 	}
 
-	.left {
-		transform: translateX(-150%);
-	}
-
 	.right {
-		transform: translateX(150%);
-
+		transform: translateX(100%);
 	}
 }

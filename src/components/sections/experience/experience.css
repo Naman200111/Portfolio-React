@@ -27,7 +27,7 @@
 	transition: .5s ease-in-out;
 }
 
-.show {
+.show-experience {
 	opacity: 1 !important;
 	transform: translateY(0%) !important;
 }

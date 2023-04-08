@@ -19,14 +19,14 @@ export default function AboutMe() {
 
     useEffect(() => {
         if(isIntersecting) 
-            myRef.current.classList.add("show")
+            myRef.current.classList.add("show-aboutMe")
         else
-            myRef.current.classList.remove("show")
+            myRef.current.classList.remove("show-aboutMe")
     }, [isIntersecting])
 
 
     return (
-        <section className="aboutMe" id='about me'>
+        <section className="aboutMe" id='aboutMe'>
             <div className="aboutMe--heading">
                 <h4>About Me</h4>
             </div>
