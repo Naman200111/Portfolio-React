@@ -18,11 +18,32 @@
 }
 
 .brief-me {
-	/* height: 1.5em; */
 	color: lightgrey;
 	font-size: 0.8em;
 	margin-top: 1em;
 	line-height: 1.25rem;
+}
+
+.CV-anchor {
+	display: block;
+	color: #000000cc;
+	background-color: #ffffffeb;
+	padding: .5rem;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 2rem;
+	width: 7.5em;
+}
+
+.CV-effects a:hover {
+	background-color: #000000de;
+	color: #ffffffd1;
+	transition-duration: 0.1s;
+	transition-delay: 25ms;
+}
+
+.CV-effects a:active {
+	box-shadow: inset 1px 1px 5px 0px #ffffff;
 }
 
 .my-image-div {

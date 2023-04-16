@@ -40,9 +40,9 @@
 	transform: translateX(0%) !important;
 }
 
-.right {
+/* .right {
 	transform: translateX(-100%);
-}
+} */
 
 .project-img {
 	display: none;
@@ -150,7 +150,7 @@
 		transition: 1s ease-in-out;
 	}
 
-	.right {
+	/* .right {
 		transform: translateX(100%);
-	}
+	} */
 }

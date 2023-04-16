@@ -25,7 +25,7 @@ export default function Projects() {
     )
 
     myRef.current.querySelectorAll(".project").forEach(child => {
-      console.log(child)
+      // console.log(child)
       observer.observe(child)
     })
 
@@ -75,7 +75,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="project right">
+        <div className="project">
           <div className="project-img">
             <img
               src="./images/wallpaper-love-modified.png"

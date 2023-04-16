@@ -4,6 +4,7 @@ import AboutMe from './aboutMe/aboutMe'
 import Experience from './experience/experience'
 import Projects from './projects/projects'
 import Skills from './skills/skills'
+// import ContactMe from './contactMe/contactMe'
 import './sections.css'
 
 export default function Sections() {
@@ -14,6 +15,7 @@ export default function Sections() {
       <Experience />
       <Projects />
       <Skills />
+      {/* <ContactMe /> */}
     </div>
   )
 }

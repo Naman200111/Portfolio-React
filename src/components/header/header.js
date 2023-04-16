@@ -8,14 +8,30 @@ import './header.css'
 
 export default function Header() {
 	const [sidebarClass, setSideBarClass] = useState(false)
+	const [isScroll, setIsScroll] = useState(false)
+
 	const handleClick = () => {
 		setSideBarClass(prevValue => !prevValue)
 	}
 	const sidebarStyle = {
 		transform: sidebarClass ? "translateX(0%)" : "translateX(500%)"
 	}
+
+	const headerColorStyle = {
+		boxShadow: isScroll ? "0px 5px 5px 2px black" : "none",
+	}
+
+	const headerColorFunction = () => {
+		if(window.scrollY > 80) {
+			setIsScroll(true)
+		}else {
+			setIsScroll(false)
+		}
+	}
+	window.addEventListener('scroll', headerColorFunction)
+
 	return (
-		<div className='header'>
+		<div className='header' style={headerColorStyle}>
 			<div className='name'>Naman Agrawal</div>
 			<div className="hamburger-icon">
 				<BsList onClick={handleClick} className='list'/>
@@ -45,6 +61,10 @@ export default function Header() {
 					<GiSkills className='ham-icons'/>
 					<p>Skills</p>
 				</a>
+				{/* <a className='button-anchor' href='#contactMe' onClick={handleClick}>
+					<GiSkills className='ham-icons'/>
+					<p>Contact Me</p>
+				</a> */}
 			</div>
 
 			<div className='buttons'>
@@ -53,6 +73,7 @@ export default function Header() {
 				<a className='header-button-anchor' href='#experience'>Experience</a>
 				<a className='header-button-anchor' href='#projects'>Projects</a>
 				<a className='header-button-anchor' href='#skills'>Skills</a>
+				{/* <a className='header-button-anchor' href='#contactMe'>Contact Me</a> */}
 			</div>
 		</div>
 	)

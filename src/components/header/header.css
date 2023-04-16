@@ -52,7 +52,8 @@
 }
 
 .button-anchor:hover {
-	background-color: lightseagreen;
+	background-color: #ffffffeb;
+	color: black;
 	transition-duration: 0.2s;
 	border-radius: 5px;
 	transition-delay: 25ms;
@@ -64,18 +65,15 @@
 }
 
 .header-button-anchor {
-	background: white;
-	color: black;
 	user-select: none;
 	font-family: 'Inter', sans-serif;
 	text-decoration: none;
-	padding: .5rem;
+	margin: .5rem;
+	color: black;
 }
 
 .header-button-anchor:hover {
-	background-color: lightseagreen;
-	transition-duration: 0.2s;
-	border-radius: 5px;
+	transition-duration: 0.1s;
 	transition-delay: 25ms;
 	border-bottom: 2px solid black;
 }

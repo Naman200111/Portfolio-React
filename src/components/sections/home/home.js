@@ -39,11 +39,12 @@ export default function Home() {
                         1000,
                         'MCE Major from Delhi Technological University.',
                         1000,
-                        'Enthusiastic and Energetic Explorer.',
+                        'Enthusiastic and Energetic Explorer.', 
                         1000
                         ]}
                     /> */}
                 </div>
+                <div className="CV-effects"><a href='https://drive.google.com/file/d/1wkJW0lobaElRHVD7rFV8jTIb-Kx6nyV6/view?usp=share_link' className='CV-anchor'>Download CV</a></div>
             </div>
             <div className='my-image-div' ref={myRef}>
                 <img src="./images/image1.jpg" alt='myself in front of temple' className='my-image'></img>
