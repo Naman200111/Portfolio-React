@@ -38,9 +38,9 @@ export default function Projects() {
       </div>
       <div className="projects--div" ref={myRef}>
         <div className="project">
-          <div className="project-img">
-            <img src="./images/quiz.png" alt="Project Logo"></img>
-          </div>
+          {/* <div className="project-img">
+            <img src="./images/quiz.png" alt="Project Logo" loading="lazy"></img>
+          </div> */}
           <div className="project-desc">
             <div className="project-desc--start">
               <div className="project-desc--heading">
@@ -76,12 +76,13 @@ export default function Projects() {
         </div>
 
         <div className="project">
-          <div className="project-img">
+          {/* <div className="project-img">
             <img
               src="./images/wallpaper-love-modified.png"
               alt="Project Logo"
+              loading="lazy"
             ></img>
-          </div>
+          </div> */}
           <div className="project-desc">
             <div className="project-desc--start">
               <div className="project-desc--heading">
@@ -111,9 +112,9 @@ export default function Projects() {
         </div>
 
         <div className="project" >
-          <div className="project-img">
-            <img src="./images/epic-modified.png" alt="Project Logo"></img>
-          </div>
+          {/* <div className="project-img">
+            <img src="./images/epic-modified.png" alt="Project Logo" loading="lazy"></img>
+          </div> */}
           <div className="project-desc">
             <div className="project-desc--start">
               <div className="project-desc--heading">

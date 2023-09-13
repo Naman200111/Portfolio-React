@@ -61,10 +61,6 @@ export default function Header() {
 					<GiSkills className='ham-icons'/>
 					<p>Skills</p>
 				</a>
-				{/* <a className='button-anchor' href='#contactMe' onClick={handleClick}>
-					<GiSkills className='ham-icons'/>
-					<p>Contact Me</p>
-				</a> */}
 			</div>
 
 			<div className='buttons'>
@@ -73,7 +69,6 @@ export default function Header() {
 				<a className='header-button-anchor' href='#experience'>Experience</a>
 				<a className='header-button-anchor' href='#projects'>Projects</a>
 				<a className='header-button-anchor' href='#skills'>Skills</a>
-				{/* <a className='header-button-anchor' href='#contactMe'>Contact Me</a> */}
 			</div>
 		</div>
 	)
