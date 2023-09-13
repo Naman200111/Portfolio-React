@@ -26,7 +26,7 @@ export default function Home() {
             <div className='my-intro'> 
                 <p className='intro-name'>I am <strong>Naman Agrawal</strong></p>
                 <div className='brief-me'>
-                    <p>I'm an Upcoming Software Developer ready to enter in the Tech World. I am currently a Student but full of Energy and Enthusiasm.</p>
+                    <p>Software Engineer at Shipsy, working with Analytics Team to provide a robust platform  aimed at enhancing the organization's Business Intelligence management capabilities.</p>
                 </div>
                 <div className="CV-effects"><a href='https://drive.google.com/file/d/1wkJW0lobaElRHVD7rFV8jTIb-Kx6nyV6/view?usp=share_link' className='CV-anchor'>Download CV</a></div>
             </div>
