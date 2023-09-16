@@ -42,20 +42,10 @@
 
 .my-image-back {
     align-self: center;
-}
-
-
-@media (min-width: 478px) {
-    .my-image-back {
-        max-width: 80%;
-    }
+    border-radius: 250px;
 }
 
 @media (min-width: 678px) {
-    .my-image-back {
-        max-width: 50%;
-    }
-
     .about_me--description {
         font-size: 0.75em;
         transform: translateY(-100%);

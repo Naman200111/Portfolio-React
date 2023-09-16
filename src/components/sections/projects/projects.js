@@ -1,35 +1,29 @@
 import React from "react";
-import './projects.css'
+import "./projects.css";
 import { SiGithub } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect } from "react";
 
 export default function Projects() {
   const myRef = useRef();
-  
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          entry.target.classList.add("show-projects")
-          // observer.unobserve(entry.target)
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show-projects");
+          observer.unobserve(entry.target);
+        } else {
+          entry.target.classList.remove("show-projects");
         }
-        else {
-          entry.target.classList.remove("show-projects")
-        }
-      })
-    },
-    // {
-    //   rootMargin: "-100px"
-    // }
-    )
+      });
+    });
 
-    myRef.current.querySelectorAll(".project").forEach(child => {
-      // console.log(child)
-      observer.observe(child)
-    })
-
-  }, [])
+    console.log(myRef, "projectRef");
+    myRef.current.querySelectorAll(".project").forEach((child) => {
+      observer.observe(child);
+    });
+  }, []);
 
   return (
     <section className="projects" id="projects">
@@ -39,7 +33,11 @@ export default function Projects() {
       <div className="projects--div" ref={myRef}>
         <div className="project">
           {/* <div className="project-img">
-            <img src="./images/quiz.png" alt="Project Logo" loading="lazy"></img>
+            <img
+              src="./images/quiz.png"
+              alt="Project Logo"
+              loading="lazy"
+            ></img>
           </div> */}
           <div className="project-desc">
             <div className="project-desc--start">
@@ -54,10 +52,16 @@ export default function Projects() {
               Test your knowledge by answering some questions.
             </p>
             <div className="project-links">
-              <a className="project-link--github" href="https://github.com/Naman200111/Quizzical-React">
-								<SiGithub />
-							</a>
-              <a className='project-link--anchor' href="https://quizzical-test.netlify.app/">
+              <a
+                className="project-link--github"
+                href="https://github.com/Naman200111/Quizzical-React"
+              >
+                <SiGithub />
+              </a>
+              <a
+                className="project-link--anchor"
+                href="https://quizzical-test.netlify.app/"
+              >
                 <BiLinkExternal />
               </a>
             </div>
@@ -96,10 +100,16 @@ export default function Projects() {
               Find your favourite wallpapers and Download them.
             </p>
             <div className="project-links">
-							<a className="project-link--github" href="https://github.com/Naman200111/Wallpaper-Love-React">
-								<SiGithub />
-							</a>
-              <a className='project-link--anchor' href="https://wallpaper-love.netlify.app/">
+              <a
+                className="project-link--github"
+                href="https://github.com/Naman200111/Wallpaper-Love-React"
+              >
+                <SiGithub />
+              </a>
+              <a
+                className="project-link--anchor"
+                href="https://wallpaper-love.netlify.app/"
+              >
                 <BiLinkExternal />
               </a>
             </div>
@@ -111,9 +121,13 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="project" >
+        <div className="project">
           {/* <div className="project-img">
-            <img src="./images/epic-modified.png" alt="Project Logo" loading="lazy"></img>
+            <img
+              src="./images/epic-modified.png"
+              alt="Project Logo"
+              loading="lazy"
+            ></img>
           </div> */}
           <div className="project-desc">
             <div className="project-desc--start">
@@ -128,10 +142,16 @@ export default function Projects() {
               Find Famous MarvelQuotes and Weekly Free EpicGames.
             </p>
             <div className="project-links">
-							<a className="project-link--github" href="https://github.com/Naman200111/MarvelQuotes-EpicGames-React">
-								<SiGithub />
-							</a>
-              <a className='project-link--anchor' href="https://epicgames-marvelquotes.netlify.app/">
+              <a
+                className="project-link--github"
+                href="https://github.com/Naman200111/MarvelQuotes-EpicGames-React"
+              >
+                <SiGithub />
+              </a>
+              <a
+                className="project-link--anchor"
+                href="https://epicgames-marvelquotes.netlify.app/"
+              >
                 <BiLinkExternal />
               </a>
             </div>
