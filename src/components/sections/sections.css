@@ -4,6 +4,7 @@
 	align-items: center;
 	color: #dee1e5;
 	background-color: #212766;
+	gap: 1em;
 }
 
 @media (min-width: 478px) {

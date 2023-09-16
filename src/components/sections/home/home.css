@@ -26,13 +26,13 @@
 
 .CV-anchor {
 	display: block;
-	color: #000000cc;
+	border: none;
 	background-color: #ffffffeb;
-	padding: .5rem;
+	padding: 0.75rem;
 	text-decoration: none;
 	border-radius: 5px;
 	margin-top: 2rem;
-	width: 7.5em;
+	width: 8.5em;
 }
 
 .CV-effects a:hover {
