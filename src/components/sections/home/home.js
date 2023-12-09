@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./home.css";
-import { saveAs } from "file-saver";
+import { RESUME_LINK } from "../../../constants";
 
 export default function Home() {
   const myRef = useRef();
@@ -17,12 +17,6 @@ export default function Home() {
     observer.observe(myRef.current);
   }, []);
 
-  const handleClick = () => {
-    saveAs(
-      "https://drive.google.com/file/d/172ArGx5ZwQpQHPJ90QSJGaFRiOZGZvJY/view?usp=sharing",
-      "resume"
-    );
-  };
   return (
     <section className="home" id="home">
       <div className="my-intro">
@@ -37,9 +31,15 @@ export default function Home() {
           </p>
         </div>
         <div className="CV-effects">
-          <button className="CV-anchor" onClick={handleClick}>
+          <a
+            href={RESUME_LINK}
+            target="_blank"
+            style={{ textDecoration: "none" }}
+            className="CV-anchor"
+            rel="noreferrer"
+          >
             Download CV
-          </button>
+          </a>
         </div>
       </div>
       <div className="my-image-div" ref={myRef}>
