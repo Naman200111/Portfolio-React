@@ -68,14 +68,16 @@
 	user-select: none;
 	font-family: 'Inter', sans-serif;
 	text-decoration: none;
-	margin: .5rem;
 	color: black;
+	padding: .5rem 1rem;
 }
 
 .header-button-anchor:hover {
 	transition-duration: 0.1s;
 	transition-delay: 25ms;
-	border-bottom: 2px solid black;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
 }
 
 .bug-arrow-class {
@@ -96,17 +98,6 @@
 		margin: 1rem 0rem 0.75rem 0.75rem;
 	}
 
-	.buttons {
-		display: flex;
-		gap: .25rem;
-		margin-right: .5rem;
-		font-size: .75em;
-	}
-
-	.hamburger-icon {
-		display: none;
-	}
-
 	.home {
 		justify-content: space-evenly;
 		gap: 1em;
@@ -122,13 +113,24 @@
 	}
 }
 
+@media (min-width: 768px) {
+	.buttons {
+		display: flex;
+		margin-right: .5rem;
+		font-size: .75em;
+	}
+
+	.hamburger-icon {
+		display: none;
+	}
+}
+
 @media (min-width: 960px) {
 	.name {
 		margin: 1rem 0rem 0.75rem 2rem;
 	}
 
 	.buttons {
-		gap: 1rem;
 		margin-right: 1.5rem;
 	}
 }

@@ -63,6 +63,10 @@
 }
 
 @media (min-width: 678px) {
+	.experience {
+		width: 100%;
+	}
+
 	.experience_header {
 		flex-direction: column;
 	}

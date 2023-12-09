@@ -36,19 +36,21 @@ export default function Experience() {
             <div className="experience_work">
               <ul>
                 <li>
-                  Provided with the support for Progress Bar Charts for better
-                  visualisations.
+                  Implemented support for Progress Bar Charts to enhance data
+                  visualization capabilities.
+                </li>
+                <li>
+                  Developed a Dummy Data functionality to gracefully handle
+                  scenarios where data is absent, ensuring a seamless user
+                  experience.
                 </li>
                 <li>
                   Delivered a feature to apply Time Limit constraint for
                   accessing the Data Mart.
                 </li>
                 <li>
-                  Delivered a Dummy Data functionality when the data is not
-                  present.
-                </li>
-                <li>
-                  Proactively tackled bugs to sustain the momentum of the
+                  Proactively addressed and resolved bugs, playing a crucial
+                  role in maintaining the robustness and continuity of the
                   Business Intelligence Platform.
                 </li>
               </ul>
