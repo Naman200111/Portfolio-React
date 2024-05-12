@@ -31,28 +31,36 @@ export default function Projects() {
       </div>
       <div className="projects--div" ref={myRef}>
         <ProjectComponent
-          projectName="Quizzical"
-          projectDuration="December 2022"
-          projectDescription="Test your knowledge by answering some questions."
-          projectGithubLink="https://github.com/Naman200111/Quizzical-React"
-          projectLiveLink="https://quizzical-test.netlify.app/"
-          projectTechs={["React", "Javascript", "APIs"]}
+          projectName="Make Notes"
+          projectDuration="April 2024"
+          projectDescription="Create your personalized Priority notes with Add, Update or Delete operations."
+          projectGithubLink="https://github.com/Naman200111/Make-Notes"
+          projectLiveLink="https://makesomenotes.netlify.app"
+          projectTechs={["React", "Javascript", "MongoDB", "Express.js"]}
+        />
+        <ProjectComponent
+          projectName="MarvelQuotes-EpicGames"
+          projectDuration="January 2023"
+          projectDescription="Find Famous MarvelQuotes and Weekly Free EpicGames."
+          projectGithubLink="https://github.com/Naman200111/MarvelQuotes-EpicGames-React"
+          projectLiveLink="https://epicgames-marvelquotes.netlify.app/"
+          projectTechs={["React", "Javascript", "APIs", "Firebase"]}
         />
         <ProjectComponent
           projectName="Wallpaper Love"
-          projectDuration="January 2022"
+          projectDuration="December 2022"
           projectDescription="Find your favourite wallpapers and Download them."
           projectGithubLink="https://github.com/Naman200111/Wallpaper-Love-React"
           projectLiveLink="https://wallpaper-love.netlify.app/"
           projectTechs={["React", "Javascript", "APIs"]}
         />
         <ProjectComponent
-          projectName="MarvelQuotes-EpicGames"
-          projectDuration="January 2022"
-          projectDescription="Find Famous MarvelQuotes and Weekly Free EpicGames."
-          projectGithubLink="https://github.com/Naman200111/MarvelQuotes-EpicGames-React"
-          projectLiveLink="https://epicgames-marvelquotes.netlify.app/"
-          projectTechs={["React", "Javascript", "APIs", "Firebase"]}
+          projectName="Quizzical"
+          projectDuration="November 2022"
+          projectDescription="Test your knowledge by answering some questions."
+          projectGithubLink="https://github.com/Naman200111/Quizzical-React"
+          projectLiveLink="https://quizzical-test.netlify.app/"
+          projectTechs={["React", "Javascript", "APIs"]}
         />
       </div>
     </section>

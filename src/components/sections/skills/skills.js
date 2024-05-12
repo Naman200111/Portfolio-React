@@ -34,9 +34,9 @@ export default function Skills() {
         <SkillComponent skill="React + Redux" percentage="87%" />
         <SkillComponent skill="HTML" percentage="90%" />
         <SkillComponent skill="CSS" percentage="86%" />
-        <SkillComponent skill="Express JS" percentage="73%" />
-        <SkillComponent skill="GraphQL" percentage="67%" />
-        <SkillComponent skill="MongoDB" percentage="70%" />
+        <SkillComponent skill="Express JS" percentage="78%" />
+        <SkillComponent skill="GraphQL" percentage="63%" />
+        <SkillComponent skill="MongoDB" percentage="75%" />
         <SkillComponent skill="C++ Programming" percentage="85%" />
         <SkillComponent
           skill="Data Structures and Algorithms"

@@ -24,30 +24,35 @@ export default function Footer() {
         <a
           className="social-media-anchor link"
           href="https://github.com/Naman200111"
+          target="_blank"
         >
           <SiGithub className="icon" />
         </a>
         <a
           className="social-media-anchor link"
           href="https://www.linkedin.com/in/naman-agrawal-1b53151b0/"
+          target="_blank"
         >
           <SiLinkedin className="icon" />
         </a>
         <a
           className="social-media-anchor link"
           href="https://twitter.com/NamaNAgR_15"
+          target="_blank"
         >
           <SiTwitter className="icon" />
         </a>
         <a
           className="social-media-anchor link"
           href="https://leetcode.com/naman_agr/"
+          target="_blank"
         >
           <SiLeetcode className="icon" />
         </a>
         <a
           className="social-media-anchor link"
           href="mailto:namanagrawal1895@gmail.com"
+          target="_blank"
         >
           <SiGmail className="icon" />
         </a>
@@ -58,6 +63,7 @@ export default function Footer() {
         <a
           className="code-reference"
           href="https://github.com/Naman200111/Portfolio-React"
+          target="_blank"
         >
           <SiGithub />
           <p>Github</p>
