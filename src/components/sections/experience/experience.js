@@ -30,28 +30,38 @@ export default function Experience() {
         <div className="experience--div">
           <div className="experience_details">
             <div className="experience_header">
-              <h4>Software Developer</h4>
+              <div className="experience-with-github">
+                <h4>Software Developer</h4>
+                <h4>
+                  <a 
+                    href="https://github.com/NAMAN-AGRAWAL-SHIPSY"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      fontSize: '0.9em',
+                      color: '#ffffffd6',
+                      textDecoration: 'none'
+                    }}
+                  >
+                      (Github)
+                  </a>
+                </h4>
+              </div>
               <h4 className="duration">June 2023 - Present</h4>
             </div>
             <div className="experience_work">
               <ul>
                 <li>
-                  Proactively addressing newly required Features and resolving existing Bugs,
-                  playing a crucial role in maintaining the robustness of our Business Intelligence
-                  Platform.
+                  Played a crucial role in doubling the product adoption and increasing the
+                  Requests/Min ∼1.8 times.
                 </li>
                 <li>
                   Implemented support for Progress Bar Charts to enhance data
                   visualization capabilities.
                 </li>
                 <li>
-                  Developed a Dummy Data functionality to gracefully handle
-                  scenarios where data is absent, ensuring a seamless user
-                  experience.
-                </li>
-                <li>
-                  Delivered a feature to apply Time Limit constraint for
-                  accessing the Data Mart.
+                  Delivered majorfeatures include Product Video Tour Support, JIRA-like
+                  Watchers, Visualization Charts, Dummy Data support, and more.
                 </li>
               </ul>
             </div>

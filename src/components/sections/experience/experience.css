@@ -43,6 +43,13 @@
 	gap: 0.25em;
 }
 
+.experience-with-github {
+	display: flex;
+	gap: 0.5em;
+	align-items: center;
+}
+
+
 .experience-logo {
 	margin: 0 auto;
 	border-radius: 10px;
@@ -65,10 +72,6 @@
 @media (min-width: 678px) {
 	.experience {
 		width: 100%;
-	}
-
-	.experience_header {
-		flex-direction: column;
 	}
 
 	.experiences--div {
