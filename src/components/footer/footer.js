@@ -25,6 +25,7 @@ export default function Footer() {
           className="social-media-anchor link"
           href="https://github.com/Naman200111"
           target="_blank"
+          rel="noreferrer"
         >
           <SiGithub className="icon" />
         </a>
@@ -32,6 +33,7 @@ export default function Footer() {
           className="social-media-anchor link"
           href="https://www.linkedin.com/in/naman-agrawal-1b53151b0/"
           target="_blank"
+          rel="noreferrer"
         >
           <SiLinkedin className="icon" />
         </a>
@@ -39,6 +41,7 @@ export default function Footer() {
           className="social-media-anchor link"
           href="https://twitter.com/NamaNAgR_15"
           target="_blank"
+          rel="noreferrer"
         >
           <SiTwitter className="icon" />
         </a>
@@ -46,6 +49,7 @@ export default function Footer() {
           className="social-media-anchor link"
           href="https://leetcode.com/naman_agr/"
           target="_blank"
+          rel="noreferrer"
         >
           <SiLeetcode className="icon" />
         </a>
@@ -53,6 +57,7 @@ export default function Footer() {
           className="social-media-anchor link"
           href="mailto:namanagrawal1895@gmail.com"
           target="_blank"
+          rel="noreferrer"
         >
           <SiGmail className="icon" />
         </a>
@@ -64,6 +69,7 @@ export default function Footer() {
           className="code-reference"
           href="https://github.com/Naman200111/Portfolio-React"
           target="_blank"
+          rel="noreferrer"
         >
           <SiGithub />
           <p>Github</p>

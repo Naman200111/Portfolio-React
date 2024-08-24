@@ -41,10 +41,10 @@ export const ProjectComponent = (props) => {
         </div>
         <p className="project-para">{projectDescription}</p>
         <div className="project-links">
-          <a className="project-link--github" href={projectGithubLink} target="_blank">
+          <a className="project-link--github" href={projectGithubLink} target="_blank" rel="noreferrer">
             <SiGithub />
           </a>
-          <a className="project-link--anchor" href={projectLiveLink} target="_blank">
+          <a className="project-link--anchor" href={projectLiveLink} target="_blank" rel="noreferrer">
             <BiLinkExternal />
           </a>
         </div>
