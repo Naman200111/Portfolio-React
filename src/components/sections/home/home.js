@@ -44,7 +44,7 @@ export default function Home() {
       </div>
       <div className="my-image-div" ref={myRef}>
         <img
-          src="./images/image1-smallest.jpg"
+          src="./images/image.png"
           alt="myself in front of temple"
           className="my-image"
           loading="lazy"
