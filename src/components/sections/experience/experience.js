@@ -60,7 +60,7 @@ export default function Experience() {
                   visualization capabilities.
                 </li>
                 <li>
-                  Delivered majorfeatures include Product Video Tour Support, JIRA-like
+                  Delivered major features include Filter Views, Product Video Tour Support, JIRA-like
                   Watchers, Visualization Charts, Dummy Data support, and more.
                 </li>
               </ul>

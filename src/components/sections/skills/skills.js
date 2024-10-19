@@ -39,6 +39,9 @@ export default function Skills() {
         <SkillComponent skill="MongoDB" percentage="75%" />
         <SkillComponent skill="Apache Kafka" percentage="72%" />
         <SkillComponent skill="Redis" percentage="73%" />
+        <SkillComponent skill="AWS" percentage="60%" />
+        <SkillComponent skill="Docker" percentage="70%" />
+        <SkillComponent skill="Socket.io" percentage="65%" />
         <SkillComponent skill="C++ Programming" percentage="85%" />
         <SkillComponent
           skill="Data Structures and Algorithms"

@@ -44,9 +44,9 @@ export const ProjectComponent = (props) => {
           <a className="project-link--github" href={projectGithubLink} target="_blank" rel="noreferrer">
             <SiGithub />
           </a>
-          <a className="project-link--anchor" href={projectLiveLink} target="_blank" rel="noreferrer">
+          {projectLiveLink ? <a className="project-link--anchor" href={projectLiveLink} target="_blank" rel="noreferrer">
             <BiLinkExternal />
-          </a>
+          </a> : null}
         </div>
         <div className="project_techs">
           {projectTechs.map((projectTech) => {

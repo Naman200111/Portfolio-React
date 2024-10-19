@@ -31,6 +31,13 @@ export default function Projects() {
       </div>
       <div className="projects--div" ref={myRef}>
         <ProjectComponent
+          projectName="Deployment Pipeline"
+          projectDuration="October 2024"
+          projectDescription="A Deployment Pipeline for deploying your react projects using the Github URL."
+          projectGithubLink="https://github.com/NAMAN200111/DEPLOYMENT-PIPELINE"
+          projectTechs={["AWS", "Docker", "Redis", "Socket.io"]}
+        />
+        <ProjectComponent
           projectName="Make Notes"
           projectDuration="April 2024"
           projectDescription="Create your personalized Priority notes with Add, Update or Delete operations."
