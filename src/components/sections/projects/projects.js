@@ -31,6 +31,13 @@ export default function Projects() {
       </div>
       <div className="projects--div" ref={myRef}>
         <ProjectComponent
+          projectName="Video Transcoding Pipeline"
+          projectDuration="November 2024"
+          projectDescription="A Video Transcoding Pipeline for transcoding a video into different resolutions using Fluent-ffmpeg."
+          projectGithubLink="https://github.com/Naman200111/video-transcoding-pipeline"
+          projectTechs={["AWS", "Docker", "Fluent-FFMPEG", "Multer-S3"]}
+        />
+        <ProjectComponent
           projectName="Deployment Pipeline"
           projectDuration="October 2024"
           projectDescription="A Deployment Pipeline for deploying your react projects using the Github URL."
