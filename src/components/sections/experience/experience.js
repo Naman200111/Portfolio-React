@@ -33,17 +33,17 @@ export default function Experience() {
               <div className="experience-with-github">
                 <h4>Software Developer</h4>
                 <h4>
-                  <a 
+                  <a
                     href="https://github.com/NAMAN-AGRAWAL-SHIPSY"
                     target="_blank"
                     rel="noreferrer"
                     style={{
-                      fontSize: '0.9em',
-                      color: '#ffffffd6',
-                      textDecoration: 'none'
+                      fontSize: "0.9em",
+                      color: "#ffffffd6",
+                      textDecoration: "none",
                     }}
                   >
-                      (Github)
+                    (Github)
                   </a>
                 </h4>
               </div>
@@ -52,16 +52,22 @@ export default function Experience() {
             <div className="experience_work">
               <ul>
                 <li>
-                  Played a crucial role in doubling the product adoption and increasing the
-                  Requests/Min ∼1.8 times.
+                  Integrated a robust Ticketing tool application with rider and
+                  vendor portals, designed to streamline rapid issue resolution
+                  for high-profile clients.
+                </li>
+                <li>
+                  Played a crucial role in doubling the product adoption and
+                  increasing the Requests/Min ∼1.8 times.
                 </li>
                 <li>
                   Implemented support for Progress Bar Charts to enhance data
                   visualization capabilities.
                 </li>
                 <li>
-                  Delivered major features include Filter Views, Product Video Tour Support, JIRA-like
-                  Watchers, Visualization Charts, Dummy Data support, and more.
+                  Delivered major features include Filter Views, Product Video
+                  Tour Support, JIRA-like Watchers, Visualization Charts, Dummy
+                  Data support, and more.
                 </li>
               </ul>
             </div>

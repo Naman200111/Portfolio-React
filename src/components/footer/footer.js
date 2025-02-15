@@ -39,7 +39,7 @@ export default function Footer() {
         </a>
         <a
           className="social-media-anchor link"
-          href="https://twitter.com/NamaNAgR_15"
+          href="https://x.com/namanagrawal_15"
           target="_blank"
           rel="noreferrer"
         >
