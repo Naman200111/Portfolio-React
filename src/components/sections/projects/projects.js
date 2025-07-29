@@ -31,6 +31,19 @@ export default function Projects() {
       </div>
       <div className="projects--div" ref={myRef}>
         <ProjectComponent
+          projectName="Mytube"
+          projectDuration="March 2025 - June 2025"
+          projectDescription=" Built a full-featured YouTube clone using Next.js and tRPC with end-to-end type safety and server-side data prefetching."
+          projectGithubLink="https://github.com/Naman200111/MyTube"
+          projectLiveLink="https://my-tube-two-lac.vercel.app/"
+          projectTechs={[
+            "Nextjs",
+            "Typescript",
+            "tRPC",
+            "PostgreSQL (Drizzle)",
+          ]}
+        />
+        <ProjectComponent
           projectName="Video Transcoding Pipeline"
           projectDuration="November 2024"
           projectDescription="A Video Transcoding Pipeline for transcoding a video into different resolutions using Fluent-ffmpeg."
@@ -60,14 +73,14 @@ export default function Projects() {
           projectLiveLink="https://epicgames-marvelquotes.netlify.app/"
           projectTechs={["React", "Javascript", "APIs", "Firebase"]}
         />
-        <ProjectComponent
+        {/* <ProjectComponent
           projectName="Wallpaper Love"
           projectDuration="December 2022"
           projectDescription="Find your favourite wallpapers and Download them."
           projectGithubLink="https://github.com/Naman200111/Wallpaper-Love-React"
           projectLiveLink="https://wallpaper-love.netlify.app/"
           projectTechs={["React", "Javascript", "APIs"]}
-        />
+        /> */}
         <ProjectComponent
           projectName="Quizzical"
           projectDuration="November 2022"

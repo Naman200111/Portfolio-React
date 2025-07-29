@@ -30,12 +30,12 @@ export default function Skills() {
       </div>
 
       <div className="skills-div" ref={myRef}>
+        <SkillComponent skill="Typescript" percentage="85%" />
         <SkillComponent skill="Javascript" percentage="85%" />
+        <SkillComponent skill="Nextjs" percentage="89%" />
+        <SkillComponent skill="tRPC" percentage="80%" />
         <SkillComponent skill="React + Redux" percentage="87%" />
-        <SkillComponent skill="HTML" percentage="90%" />
-        <SkillComponent skill="CSS" percentage="86%" />
         <SkillComponent skill="Express JS" percentage="78%" />
-        <SkillComponent skill="GraphQL" percentage="63%" />
         <SkillComponent skill="MongoDB" percentage="75%" />
         <SkillComponent skill="Apache Kafka" percentage="72%" />
         <SkillComponent skill="Redis" percentage="73%" />
@@ -47,7 +47,6 @@ export default function Skills() {
           skill="Data Structures and Algorithms"
           percentage="82%"
         />
-        <SkillComponent skill="Object Oriented Programming" percentage="72%" />
       </div>
     </section>
   );
