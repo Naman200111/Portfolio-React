@@ -31,6 +31,19 @@ export default function Projects() {
       </div>
       <div className="projects--div" ref={myRef}>
         <ProjectComponent
+          projectName="Miscord"
+          projectDuration="July 2025 - March 2026"
+          projectDescription=" Built a Discord-inspired real-time communication platform using Next.js and tRPC with end-to-end type safety and server-side data prefetching."
+          projectGithubLink="https://github.com/Naman200111/Miscord"
+          projectLiveLink="https://miscord-45dy.onrender.com/"
+          projectTechs={[
+            "Nextjs",
+            "Typescript",
+            "tRPC",
+            "PostgreSQL (Drizzle)",
+          ]}
+        />
+        <ProjectComponent
           projectName="Mytube"
           projectDuration="March 2025 - June 2025"
           projectDescription=" Built a full-featured YouTube clone using Next.js and tRPC with end-to-end type safety and server-side data prefetching."
@@ -57,22 +70,22 @@ export default function Projects() {
           projectGithubLink="https://github.com/NAMAN200111/DEPLOYMENT-PIPELINE"
           projectTechs={["AWS", "Docker", "Redis", "Socket.io"]}
         />
-        <ProjectComponent
+        {/* <ProjectComponent
           projectName="Make Notes"
           projectDuration="April 2024"
           projectDescription="Create your personalized Priority notes with Add, Update or Delete operations."
           projectGithubLink="https://github.com/Naman200111/Make-Notes"
           projectLiveLink="https://makesomenotes.netlify.app"
           projectTechs={["React", "Javascript", "MongoDB", "Express.js"]}
-        />
-        <ProjectComponent
+        /> */}
+        {/* <ProjectComponent
           projectName="MarvelQuotes-EpicGames"
           projectDuration="January 2023"
           projectDescription="Find Famous MarvelQuotes and Weekly Free EpicGames."
           projectGithubLink="https://github.com/Naman200111/MarvelQuotes-EpicGames-React"
           projectLiveLink="https://epicgames-marvelquotes.netlify.app/"
           projectTechs={["React", "Javascript", "APIs", "Firebase"]}
-        />
+        /> */}
         {/* <ProjectComponent
           projectName="Wallpaper Love"
           projectDuration="December 2022"
@@ -81,14 +94,14 @@ export default function Projects() {
           projectLiveLink="https://wallpaper-love.netlify.app/"
           projectTechs={["React", "Javascript", "APIs"]}
         /> */}
-        <ProjectComponent
+        {/* <ProjectComponent
           projectName="Quizzical"
           projectDuration="November 2022"
           projectDescription="Test your knowledge by answering some questions."
           projectGithubLink="https://github.com/Naman200111/Quizzical-React"
           projectLiveLink="https://quizzical-test.netlify.app/"
           projectTechs={["React", "Javascript", "APIs"]}
-        />
+        /> */}
       </div>
     </section>
   );

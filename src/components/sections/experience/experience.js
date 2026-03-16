@@ -1,5 +1,4 @@
-import React from "react";
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import "./experience.css";
 
 export default function Experience() {
@@ -15,10 +14,11 @@ export default function Experience() {
         entry.target.classList.remove("show-experience");
       }
     });
-    myRef.current.querySelectorAll(".experience--div").forEach((child) => {
-      console.log(child);
-      observer.observe(child);
-    });
+
+    const elements = myRef.current.querySelectorAll(".experience--div");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -26,7 +26,45 @@ export default function Experience() {
       <div className="experience--heading">
         <h4>Experience</h4>
       </div>
+
       <div className="experiences--div" ref={myRef}>
+        {/* AMAZON */}
+        <div className="experience--div">
+          <div className="experience_details">
+            <div className="experience_header">
+              <h4>Software Development Engineer</h4>
+              <h4 className="duration">Aug 2025 - Present</h4>
+            </div>
+
+            <div className="experience_work">
+              <ul>
+                <li>
+                  Building backend systems enabling EU EPR compliance for
+                  third-party sellers.
+                </li>
+                <li>
+                  Improved system resilience by reducing throttling issues,
+                  cutting avoidable on-call tickets by 13%.
+                </li>
+                <li>
+                  Expanded seller reporting by exposing granular fee attributes
+                  for better analytics.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* <div>
+            <img
+              className="experience-logo"
+              src="./images/amazon-logo.svg"
+              alt="logo-of-amazon"
+              loading="lazy"
+            />
+          </div> */}
+        </div>
+
+        {/* SHIPSY */}
         <div className="experience--div">
           <div className="experience_details">
             <div className="experience_header">
@@ -47,68 +85,63 @@ export default function Experience() {
                   </a>
                 </h4>
               </div>
-              <h4 className="duration">June 2023 - Present</h4>
+
+              <h4 className="duration">June 2023 - Aug 2025</h4>
             </div>
+
             <div className="experience_work">
               <ul>
                 <li>
-                  Integrated a robust Ticketing tool application with rider and
-                  vendor portals, designed to streamline rapid issue resolution
-                  for high-profile clients.
+                  Built and integrated a Ticketing platform for rider and vendor
+                  portals to streamline issue resolution.
                 </li>
                 <li>
-                  Played a crucial role in doubling the product adoption and
-                  increasing the Requests/Min ∼1.8 times.
+                  Led a UI uplift that increased product adoption by 1.8×.
                 </li>
                 <li>
-                  Implemented support for Progress Bar Charts to enhance data
-                  visualization capabilities.
-                </li>
-                <li>
-                  Delivered major features include Filter Views, Product Video
-                  Tour Support, JIRA-like Watchers, Visualization Charts, Dummy
-                  Data support, and more.
+                  Built advanced dashboard visualizations including progress bar
+                  charts, maps and heatmaps.
                 </li>
               </ul>
             </div>
           </div>
-          <img
+
+          {/* <img
             className="experience-logo"
             src="./images/shipsy_logo.svg"
             alt="logo-of-shipsy"
             loading="lazy"
-          ></img>
+          /> */}
         </div>
+
+        {/* SAMSUNG */}
         <div className="experience--div">
           <div className="experience_details">
             <div className="experience_header">
               <h4>Software Developer Intern</h4>
               <h4 className="duration">May 2022 - July 2022</h4>
             </div>
+
             <div className="experience_work">
               <ul>
                 <li>
-                  Worked with 6G Lab Team, Created a Server and a Client Code in
-                  Python to transfer information through UDP Communication
-                  Protocol using Sockets.
+                  Developed Python server-client programs using UDP sockets for
+                  real-time communication.
                 </li>
                 <li>
-                  Managed to transfer random values from Server side to the
-                  Client side.
-                </li>
-                <li>
-                  The random values are generated and transferred every 100ms
-                  and then displayed over the client side in real time.
+                  Enabled transmission of random server-generated values to the
+                  client every 100ms.
                 </li>
               </ul>
             </div>
           </div>
-          <img
+
+          {/* <img
             className="experience-logo"
             src="./images/Samsung_Logo.svg"
             alt="logo-of-samsung"
             loading="lazy"
-          ></img>
+          /> */}
         </div>
       </div>
     </section>

@@ -25,13 +25,13 @@ export default function AboutMe() {
       </div>
       <div className="aboutMe--div">
         <div className="about_me--description" ref={myRef}>
-          I'm currently working as a Software Developer in Shipsy with the
-          Analytics Team. I have done my B.Tech. from Delhi Technological
-          University with Mathematics and Computer Science as my Major. I am a
-          dedicated Software Developer and a tech enthusiast, poised to embark
-          on a journey of exploration in the world of technology. My core belief
-          centers around acquiring knowledge of the latest global technologies
-          and leveraging my expertise to make a meaningful impact on society.
+          I’m currently working as a Software Developer at Amazon in the Seller
+          Compliance Fulfillment team. I graduated from Delhi Technological
+          University with a B.Tech. in Mathematics and Computer Science. I enjoy
+          building modern web applications and crafting intuitive user
+          experiences. As a developer, I’m always curious to explore new
+          technologies and continuously improve my skills while creating
+          software that solves real-world problems.
         </div>
         <div>
           <img

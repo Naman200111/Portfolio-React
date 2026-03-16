@@ -25,9 +25,8 @@ export default function Home() {
         </p>
         <div className="brief-me">
           <p>
-            Software Engineer at Shipsy, working with Analytics Team to provide
-            a robust platform aimed at enhancing the organization's Business
-            Intelligence management capabilities.
+            Software Engineer at Amazon, building systems that help sellers stay
+            compliant with EU EPR regulations.
           </p>
         </div>
         <div className="CV-effects">
