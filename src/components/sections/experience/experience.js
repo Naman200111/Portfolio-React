@@ -70,20 +70,6 @@ export default function Experience() {
             <div className="experience_header">
               <div className="experience-with-github">
                 <h4>Software Developer</h4>
-                <h4>
-                  <a
-                    href="https://github.com/NAMAN-AGRAWAL-SHIPSY"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{
-                      fontSize: "0.9em",
-                      color: "#ffffffd6",
-                      textDecoration: "none",
-                    }}
-                  >
-                    (Github)
-                  </a>
-                </h4>
               </div>
 
               <h4 className="duration">June 2023 - Aug 2025</h4>
