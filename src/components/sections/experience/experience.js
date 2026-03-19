@@ -32,7 +32,7 @@ export default function Experience() {
         <div className="experience--div">
           <div className="experience_details">
             <div className="experience_header">
-              <h4>Software Development Engineer</h4>
+              <h4>Software Development Engineer @ Amazon</h4>
               <h4 className="duration">Aug 2025 - Present</h4>
             </div>
 
@@ -69,7 +69,7 @@ export default function Experience() {
           <div className="experience_details">
             <div className="experience_header">
               <div className="experience-with-github">
-                <h4>Software Developer</h4>
+                <h4>Software Developer @ Shipsy</h4>
               </div>
 
               <h4 className="duration">June 2023 - Aug 2025</h4>
@@ -104,7 +104,7 @@ export default function Experience() {
         <div className="experience--div">
           <div className="experience_details">
             <div className="experience_header">
-              <h4>Software Developer Intern</h4>
+              <h4>Software Developer Intern @ SRIB</h4>
               <h4 className="duration">May 2022 - July 2022</h4>
             </div>
 
