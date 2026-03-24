@@ -9,16 +9,15 @@ export default function AboutMe() {
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#about_me--description",
-        markers: true,
-        start: "top bottom",
+        trigger: ".about_me--description",
+        start: "top 60%",
       },
     });
 
     tl.fromTo(
-      "#about_me--description",
+      ".about_me--description",
       {
-        y: -50,
+        y: -30,
         opacity: 0,
       },
       {
@@ -35,7 +34,7 @@ export default function AboutMe() {
         <h4>About Me</h4>
       </div>
       <div className="aboutMe--div">
-        <div className="about_me--description" id="about_me--description">
+        <div className="about_me--description">
           I’m currently working as a Software Developer at Amazon in the Seller
           Compliance Fulfillment team. I graduated from Delhi Technological
           University with a B.Tech. in Mathematics and Computer Science. I enjoy

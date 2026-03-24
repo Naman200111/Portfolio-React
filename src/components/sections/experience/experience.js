@@ -1,24 +1,19 @@
-import React, { useRef, useEffect } from "react";
+import { useGSAP } from "@gsap/react";
 import "./experience.css";
+import gsap from "gsap";
 
 export default function Experience() {
-  const myRef = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show-experience");
-        observer.unobserve(entry.target);
-      } else {
-        entry.target.classList.remove("show-experience");
-      }
+  useGSAP(() => {
+    gsap.utils.toArray(".experience--div").forEach((el, i) => {
+      gsap.from(el, {
+        y: 50,
+        opacity: 0,
+        duration: 0.6,
+        scrollTrigger: {
+          trigger: el,
+        },
+      });
     });
-
-    const elements = myRef.current.querySelectorAll(".experience--div");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
   }, []);
 
   return (
@@ -27,7 +22,7 @@ export default function Experience() {
         <h4>Experience</h4>
       </div>
 
-      <div className="experiences--div" ref={myRef}>
+      <div className="experiences--div">
         {/* AMAZON */}
         <div className="experience--div">
           <div className="experience_details">

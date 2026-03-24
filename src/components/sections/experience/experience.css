@@ -16,8 +16,6 @@
 .experience--div {
 	display: flex;
 	flex-direction: column-reverse;
-	transition: .5s ease-in-out;
-	transform: translateY(-10%);
 	width: 100%;
 }
 
@@ -33,11 +31,6 @@
 	margin-top: 1.5em;
 	opacity: 1;
 	width: 90%; 
-}
-
-.show-experience {
-	opacity: 1 !important;
-	transform: translateY(0%) !important;
 }
 
 .experience_header {
@@ -68,6 +61,7 @@
 }
 
 .experience_work ul li {
+	list-style-type: disc;
 	margin-bottom: 0.5em;
 }
 
@@ -78,7 +72,6 @@
 
 	.experiences--div {
 		flex-direction: column;
-		align-items: stretch; /* FIX (was center) */
 		max-width: 100%;
 		width: 100%;
 	}
@@ -86,8 +79,6 @@
 	.experience--div {
 		flex-direction: row-reverse;
 		gap: 2em;
-		transition: .5s ease-in-out;
-		transform: translateY(-30%);
 		width: 100%;
 	}
 

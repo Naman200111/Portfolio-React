@@ -1,26 +1,21 @@
-import React from "react";
-import { useRef, useEffect } from "react";
 import "./skills.css";
 import { SkillComponent } from "../../utils";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Skills() {
-  const myRef = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      if (entry.isIntersecting) {
-        myRef.current.querySelectorAll("div").forEach((child) => {
-          child.classList.add("show-skills");
-        });
-        observer.unobserve(entry.target);
-      } else {
-        myRef.current.querySelectorAll("div").forEach((child) => {
-          child.classList.remove("show-skills");
-        });
-      }
+  useGSAP(() => {
+    gsap.utils.toArray(".skill-div").forEach((element, index) => {
+      gsap.from(element, {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: { trigger: element },
+      });
     });
-    observer.observe(myRef.current);
   }, []);
 
   return (
@@ -29,7 +24,7 @@ export default function Skills() {
         <h4>Skills</h4>
       </div>
 
-      <div className="skills-div" ref={myRef}>
+      <div className="skills-div">
         <SkillComponent skill="Typescript" percentage="85%" />
         <SkillComponent skill="Javascript" percentage="85%" />
         <SkillComponent skill="Next.js" percentage="89%" />

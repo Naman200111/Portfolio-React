@@ -1,26 +1,20 @@
-import React from "react";
 import "./projects.css";
-import { useRef, useEffect } from "react";
 import { ProjectComponent } from "../../utils";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function Projects() {
-  const myRef = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show-projects");
-          observer.unobserve(entry.target);
-        } else {
-          entry.target.classList.remove("show-projects");
-        }
+  useGSAP(() => {
+    gsap.utils.toArray(".project").forEach((project, i) => {
+      gsap.from(project, {
+        x: i % 2 ? 300 : -300,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: project,
+        },
       });
-    });
-
-    console.log(myRef, "projectRef");
-    myRef.current.querySelectorAll(".project").forEach((child) => {
-      observer.observe(child);
     });
   }, []);
 
@@ -29,7 +23,7 @@ export default function Projects() {
       <div className="projects--heading">
         <h4>Projects</h4>
       </div>
-      <div className="projects--div" ref={myRef}>
+      <div className="projects--div">
         <ProjectComponent
           projectName="Miscord"
           projectDuration="July 2025 - March 2026"
