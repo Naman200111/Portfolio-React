@@ -22,7 +22,7 @@
 .experiences--div {
 	display: flex;
 	flex-direction: column;
-	gap: 3em;
+	gap: 1em;
 	max-width: 90%;
 	width: 90%;
 }
@@ -30,7 +30,6 @@
 .experience_details {
 	margin-top: 1.5em;
 	opacity: 1;
-	width: 90%; 
 }
 
 .experience_header {
@@ -55,7 +54,7 @@
 }
 
 .experience_work {
-	margin: 1.5em;
+	margin: 1em;
 	font-size: 0.85em;
 	line-height: 1.5em;
 }
@@ -74,10 +73,11 @@
 		flex-direction: column;
 		max-width: 100%;
 		width: 100%;
+		gap: 2em;
 	}
 
 	.experience--div {
-		flex-direction: row-reverse;
+		/* flex-direction: row-reverse; */
 		gap: 2em;
 		width: 100%;
 	}
