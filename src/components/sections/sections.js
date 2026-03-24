@@ -8,7 +8,7 @@ import "./sections.css";
 
 export default function Sections() {
   return (
-    <div className="sections">
+    <div className="sections bg-emerald-800">
       <Home />
       <AboutMe />
       <Experience />

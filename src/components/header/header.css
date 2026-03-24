@@ -2,7 +2,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: white;
 	position: sticky;
 	top: 0;
 	z-index: 1;
@@ -28,7 +27,6 @@
 	transition-duration: 0.5s;
 	transition-timing-function: ease-in-out;
 	display: block;
-	background-color: #212766;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -45,8 +43,6 @@
 	padding: 1rem;
 	gap: 1.25em;
 	font-family: 'Inter', sans-serif;
-	background: #212766;
-	color: #ffffffc9;
 	border: none;
 	text-decoration: none;
 }
@@ -68,7 +64,6 @@
 	user-select: none;
 	font-family: 'Inter', sans-serif;
 	text-decoration: none;
-	color: black;
 	padding: .5rem 1rem;
 }
 
@@ -84,10 +79,10 @@
 	margin: 1.5em;
 }
 
-.list {
+/* .list {
 	height: 2.5em;
 	width: 1.5em;
-}
+} */
 
 @media (min-width: 678px) {
 	html {

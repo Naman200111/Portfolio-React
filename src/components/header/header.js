@@ -1,15 +1,12 @@
 import React, { useState } from "react";
-import { BsList } from "react-icons/bs";
-import {
-  AiOutlineArrowRight,
-  AiOutlineHome,
-  AiOutlineProfile,
-} from "react-icons/ai";
+
+import { AiOutlineHome, AiOutlineProfile } from "react-icons/ai";
 import { MdWorkOutline } from "react-icons/md";
 import { BsStack } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
 import { ImMail3 } from "react-icons/im";
 import "./header.css";
+import { List, SkipBack } from "lucide-react";
 
 export default function Header() {
   const [sidebarClass, setSideBarClass] = useState(false);
@@ -23,7 +20,7 @@ export default function Header() {
   };
 
   const headerColorStyle = {
-    boxShadow: isScroll ? "0px 5px 5px 2px black" : "none",
+    boxShadow: isScroll ? "0px 2px 2px 1px black" : "none",
   };
 
   const headerColorFunction = () => {
@@ -36,15 +33,18 @@ export default function Header() {
   window.addEventListener("scroll", headerColorFunction);
 
   return (
-    <div className="header" style={headerColorStyle}>
-      <div className="name">Naman Agrawal</div>
-      <div className="hamburger-icon">
-        <BsList onClick={handleClick} className="list" />
+    <div className="header bg-emerald-800 select-none" style={headerColorStyle}>
+      <div className="name text-center text-gray-200 select-none">NaG</div>
+      <div className="hamburger-icon text-gray-200">
+        <List onClick={handleClick} />
       </div>
 
-      <div style={sidebarStyle} className="buttons buttons-sidebar">
+      <div
+        style={sidebarStyle}
+        className="buttons buttons-sidebar bg-emerald-800 text-gray-300"
+      >
         <div className="bug-arrow-class">
-          <AiOutlineArrowRight className="list" onClick={handleClick} />
+          <SkipBack className="list" onClick={handleClick} />
         </div>
         <a className="button-anchor" href="#home" onClick={handleClick}>
           <AiOutlineHome className="ham-icons" />
@@ -72,7 +72,7 @@ export default function Header() {
         </a>
       </div>
 
-      <div className="buttons">
+      <div className="buttons text-gray-300">
         <a className="header-button-anchor" href="#home">
           Home
         </a>

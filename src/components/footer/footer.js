@@ -9,7 +9,7 @@ import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <div className="footer" id="contactMe">
+    <div className="footer bg-gray-800" id="contactMe">
       <div className="footer-header">
         <h2>Let's Get in Touch</h2>
       </div>
@@ -20,7 +20,7 @@ export default function Footer() {
           great together.
         </p>
       </div>
-      <div className="footer-links">
+      <div className="footer-links flex gap-1">
         <a
           className="social-media-anchor link"
           href="https://github.com/Naman200111"
