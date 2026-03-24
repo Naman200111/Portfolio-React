@@ -41,12 +41,24 @@ export const ProjectComponent = (props) => {
         </div>
         <p className="project-para">{projectDescription}</p>
         <div className="project-links">
-          <a className="project-link--github" href={projectGithubLink} target="_blank" rel="noreferrer">
+          <a
+            className="project-link--github"
+            href={projectGithubLink}
+            target="_blank"
+            rel="noreferrer"
+          >
             <SiGithub />
           </a>
-          {projectLiveLink ? <a className="project-link--anchor" href={projectLiveLink} target="_blank" rel="noreferrer">
-            <BiLinkExternal />
-          </a> : null}
+          {projectLiveLink ? (
+            <a
+              className="project-link--anchor"
+              href={projectLiveLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BiLinkExternal />
+            </a>
+          ) : null}
         </div>
         <div className="project_techs">
           {projectTechs.map((projectTech) => {

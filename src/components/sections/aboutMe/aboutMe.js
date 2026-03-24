@@ -1,21 +1,32 @@
-import React from "react";
-import { useRef, useEffect } from "react";
+import { useGSAP } from "@gsap/react";
 import "./aboutMe.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutMe() {
-  const myRef = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      if (entry.isIntersecting) {
-        myRef.current.classList.add("show-aboutMe");
-        observer.unobserve(entry.target);
-      } else {
-        myRef.current.classList.remove("show-aboutMe");
-      }
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#about_me--description",
+        markers: true,
+        start: "top bottom",
+      },
     });
-    observer.observe(myRef.current);
+
+    tl.fromTo(
+      "#about_me--description",
+      {
+        y: -50,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+      },
+    );
   }, []);
 
   return (
@@ -24,7 +35,7 @@ export default function AboutMe() {
         <h4>About Me</h4>
       </div>
       <div className="aboutMe--div">
-        <div className="about_me--description" ref={myRef}>
+        <div className="about_me--description" id="about_me--description">
           I’m currently working as a Software Developer at Amazon in the Seller
           Compliance Fulfillment team. I graduated from Delhi Technological
           University with a B.Tech. in Mathematics and Computer Science. I enjoy

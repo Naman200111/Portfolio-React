@@ -20,43 +20,23 @@
 .brief-me {
 	color: lightgrey;
 	font-size: 0.8em;
-	margin-top: 1em;
 	line-height: 1.25rem;
 }
 
-.CV-anchor {
-	display: block;
+/* .CV-anchor {
 	border: none;
-	background-color: #ffffffeb;
-	padding: 0.75rem;
 	text-decoration: none;
-	border-radius: 5px;
-	margin-top: 2rem;
-	width: 8em;
 	cursor: pointer;
 	color: black;
-}
+} */
 
 .CV-effects a:hover {
 	background-color: #000000de;
 	color: #ffffffd1;
-	transition-duration: 0.1s;
-	transition-delay: 25ms;
 }
 
 .CV-effects a:active {
 	box-shadow: inset 1px 1px 5px 0px #ffffff;
-}
-
-.my-image-div {
-	transform: translateY(-10%);
-	opacity: 0;
-	transition: .5s ease-in-out;
-}
-
-.show {
-	opacity: 1 !important;
-	transform: translateY(0%) !important;
 }
 
 .my-image {
