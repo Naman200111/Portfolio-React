@@ -51,6 +51,7 @@
 	color: #ffffffdb;
 	margin: 1em;
 	display: flex;
+	align-items: center;
 	gap: 0.25em;
 	text-decoration: none;
 }

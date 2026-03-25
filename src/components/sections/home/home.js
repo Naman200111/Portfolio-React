@@ -58,7 +58,7 @@ export default function Home() {
           </p>
         </div>
         <div
-          className="CV-effects bg-gray-200 p-2 rounded-md text-sm mt-2 text-gray-800 w-fit"
+          className="bg-gray-200 rounded-md text-sm mt-2 text-gray-800 p-2 w-fit hover:bg-gray-800 hover:text-gray-200"
           id="layer3"
         >
           <a href={RESUME_LINK} target="_blank" rel="noreferrer">

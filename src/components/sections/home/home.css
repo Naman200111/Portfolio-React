@@ -23,22 +23,6 @@
 	line-height: 1.25rem;
 }
 
-/* .CV-anchor {
-	border: none;
-	text-decoration: none;
-	cursor: pointer;
-	color: black;
-} */
-
-.CV-effects a:hover {
-	background-color: #000000de;
-	color: #ffffffd1;
-}
-
-.CV-effects a:active {
-	box-shadow: inset 1px 1px 5px 0px #ffffff;
-}
-
 .my-image {
 	border-radius: 300px;
 }
