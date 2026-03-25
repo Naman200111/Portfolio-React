@@ -58,10 +58,15 @@ export default function Home() {
           </p>
         </div>
         <div
-          className="bg-gray-200 rounded-md text-sm mt-2 text-gray-800 p-2 w-fit hover:bg-gray-800 hover:text-gray-200"
+          className="bg-gray-200 rounded-md text-sm mt-2 text-gray-800 w-fit hover:bg-gray-800 hover:text-gray-200 select-none"
           id="layer3"
         >
-          <a href={RESUME_LINK} target="_blank" rel="noreferrer">
+          <a
+            href={RESUME_LINK}
+            target="_blank"
+            rel="noreferrer"
+            className="block p-2"
+          >
             Download CV
           </a>
         </div>
