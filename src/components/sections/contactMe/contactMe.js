@@ -61,37 +61,37 @@ export default function ContactMe() {
         {/* ── Contact Form ── */}
         <div className="bg-zinc-900/40 backdrop-blur-md border border-emerald-900/30 rounded-2xl p-8 shadow-xl">
           <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
-            {/* Name – maps to {{from_name}} in EmailJS template */}
+            <input type="hidden" name="title" value="Message from a user for connection" />
+            <input type="hidden" name="time" value={new Date().toLocaleString()} />
+
             <div className="flex flex-col gap-2">
-              <label htmlFor="from_name" className="text-emerald-500 text-sm font-medium">
+              <label htmlFor="name" className="text-emerald-500 text-sm font-medium">
                 Name
               </label>
               <input
                 type="text"
-                id="from_name"
-                name="from_name"
+                id="name"
+                name="name"
                 placeholder="John Doe"
                 required
                 className="bg-black/50 border border-emerald-900/30 rounded-lg p-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-emerald-500 transition-colors"
               />
             </div>
 
-            {/* Email – maps to {{from_email}} */}
             <div className="flex flex-col gap-2">
-              <label htmlFor="from_email" className="text-emerald-500 text-sm font-medium">
+              <label htmlFor="email" className="text-emerald-500 text-sm font-medium">
                 Email
               </label>
               <input
                 type="email"
-                id="from_email"
-                name="from_email"
+                id="email"
+                name="email"
                 placeholder="john@example.com"
                 required
                 className="bg-black/50 border border-emerald-900/30 rounded-lg p-3 text-white placeholder:text-gray-600 focus:outline-none focus:border-emerald-500 transition-colors"
               />
             </div>
 
-            {/* Message – maps to {{message}} */}
             <div className="flex flex-col gap-2">
               <label htmlFor="message" className="text-emerald-500 text-sm font-medium">
                 Message
