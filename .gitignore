@@ -25,3 +25,7 @@ yarn-error.log*
 # /public/images
 
 /future-plans.txt
+
+# next files
+.next
+.vercel
